@@ -3,7 +3,7 @@ const catalogo = {
         nome: "Faixa Branca",
         chutes: [],
         basicos: [
-            { titulo: "Chute Frontal", videoId: "1x3oJugXzZtdygLZSW8CKZZOB3fR0Gvq0" }
+            { titulo: "Todos os Básicos", videoId: "1x3oJugXzZtdygLZSW8CKZZOB3fR0Gvq0" }
         ],
         taolus: []
     },
@@ -160,8 +160,7 @@ function categoria(nome, videos) {
       <div class="row">
         ${videos.map(v =>
         `<div class="video-card" onclick="player('${v.videoId}','${v.titulo}')">
-            <strong>${v.titulo}</strong><br>
-            <small>${nome}</small>
+            <strong>${v.titulo}</strong>
           </div>`
     ).join("")}
       </div>
