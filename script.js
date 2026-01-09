@@ -1,10 +1,10 @@
 const catalogo = {
     branca: {
         nome: "Faixa Branca",
-        chutes: [
+        chutes: [],
+        basicos: [
             { titulo: "Chute Frontal", videoId: "1x3oJugXzZtdygLZSW8CKZZOB3fR0Gvq0" }
         ],
-        basicos: [],
         taolus: []
     },
     amarela: {
