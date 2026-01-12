@@ -6,6 +6,32 @@
   --muted: #aaaaaa;
 }
 
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+}
+
+body.light-theme .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +41,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Tema Claro */
+body.light-theme {
+  --bg: #f4f4f9;
+  --card: #ffffff;
+  --accent: #c62828;
+  --text: #1a1a1a;
+  --muted: #555555;
+}
+
+/* Ajustes específicos para o tema claro */
+body.light-theme .card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme header,
+body.light-theme footer {
+  border-color: #ddd;
+}
+
+body.light-theme .video-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -25,6 +75,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  position: relative;
 }
 
 #logo {
@@ -56,19 +107,80 @@ main {
 }
 
 .card {
-  background: var(--card);
+  /* background removido aqui para ser definido nas faixas */
   padding: 40px 16px;
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
   font-weight: bold;
   font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
   transform: scale(1.05);
-  background: #2a2a2a;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Cores das Faixas */
+.faixa-branca {
+  background: linear-gradient(135deg, #ffffff, #dcdcdc);
+  color: #000;
+}
+
+.faixa-amarela {
+  background: linear-gradient(135deg, #ffd700, #ffc107);
+  color: #000;
+}
+
+.faixa-laranja {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: #000;
+}
+
+.faixa-jade {
+  background: linear-gradient(135deg, #ccff00, #b2ff59);
+  color: #000;
+  /* Verde cana fosforescente */
+}
+
+.faixa-verde {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+}
+
+.faixa-roxa {
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  color: #fff;
+}
+
+.faixa-vermelha {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: #fff;
+}
+
+.faixa-marrom_claro {
+  background: linear-gradient(135deg, #d7ccc8, #a1887f);
+  color: #000;
+}
+
+.faixa-marrom_escuro {
+  background: linear-gradient(135deg, #5d4037, #3e2723);
+  color: #fff;
+}
+
+.faixa-preta {
+  background: linear-gradient(135deg, #424242, #000000);
+  color: #fff;
+  border: 1px solid #333;
 }
 
 .card.disabled {

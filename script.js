@@ -125,9 +125,11 @@ function home() {
       ${Object.keys(catalogo).map(id => {
         const f = catalogo[id];
         const temVideo = f.chutes.length > 0 || f.basicos.length > 0 || f.taolus.length > 0;
-        const classe = temVideo ? "card" : "card disabled";
+        const classe = temVideo ? `card faixa-${id}` : `card disabled faixa-${id}`;
         const clique = temVideo ? `onclick="faixa('${id}')"` : "";
-        return `<div class="${classe}" ${clique}>${f.nome}</div>`;
+        return `<div class="${classe}" ${clique}>
+                  <div class="card-content">${f.nome}</div>
+                </div>`;
     }).join("")}
     </div>
   `;
@@ -184,3 +186,22 @@ function player(id, titulo, faixaId) {
 }
 
 home();
+
+// Lógica do Tema
+const themeBtn = document.getElementById("theme-btn");
+const body = document.body;
+
+// Carregar preferência salva
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+    body.classList.add("light-theme");
+    themeBtn.textContent = "🌙 Escuro";
+}
+
+function toggleTheme() {
+    body.classList.toggle("light-theme");
+    const isLight = body.classList.contains("light-theme");
+
+    themeBtn.textContent = isLight ? "🌙 Escuro" : "☀️ Claro";
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+}
