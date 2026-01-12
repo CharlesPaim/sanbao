@@ -139,13 +139,13 @@ function faixa(id) {
     <div class="back" onclick="home()">← Voltar</div>
     <h2>${f.nome}</h2>
 
-    ${categoria("Chutes", f.chutes)}
-    ${categoria("Básicos", f.basicos)}
-    ${categoria("Taolu´s", f.taolus)}
+    ${categoria("Chutes", f.chutes, id)}
+    ${categoria("Básicos", f.basicos, id)}
+    ${categoria("Taolu´s", f.taolus, id)}
   `;
 }
 
-function categoria(nome, videos) {
+function categoria(nome, videos, faixaId) {
     if (!videos || videos.length === 0) {
         return `
       <div class="section">
@@ -159,7 +159,7 @@ function categoria(nome, videos) {
       <h3>${nome}</h3>
       <div class="row">
         ${videos.map(v =>
-        `<div class="video-card" onclick="player('${v.videoId}','${v.titulo}')">
+        `<div class="video-card" onclick="player('${v.videoId}','${v.titulo}', '${faixaId}')">
             <strong>${v.titulo}</strong>
           </div>`
     ).join("")}
@@ -168,9 +168,9 @@ function categoria(nome, videos) {
   `;
 }
 
-function player(id, titulo) {
+function player(id, titulo, faixaId) {
     app.innerHTML = `
-    <div class="back" onclick="home()">← Voltar</div>
+    <div class="back" onclick="faixa('${faixaId}')">← Voltar</div>
     <h2>${titulo}</h2>
 
     <div class="player">
