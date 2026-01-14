@@ -185,7 +185,7 @@ function player(id, titulo, faixaId) {
   `;
 }
 
-home();
+if (app) home();
 
 // Lógica do Tema
 const themeBtn = document.getElementById("theme-btn");

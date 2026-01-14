@@ -1,0 +1,114 @@
+{
+    "ordem_categorias": [
+        "Luva",
+        "Caneleira",
+        "Protetor Bucal"
+    ],
+    "equipamentos": [
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Iniciante",
+            "nome": "Luva Training 12oz",
+            "imagem": "images/luvas/luva_01.png",
+            "link": "https://www.google.com/search?q=luva+boxe+12oz"
+        },
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Iniciante",
+            "nome": "Luva Light Star",
+            "imagem": "images/luvas/luva_02.png",
+            "link": "https://www.google.com/search?q=luva+boxe+light"
+        },
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Intermediário",
+            "nome": "Luva Combat Pro",
+            "imagem": "images/luvas/luva_05.png",
+            "link": "https://www.google.com/search?q=luva+boxe+pro"
+        },
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Intermediário",
+            "nome": "Luva Semi-Pro",
+            "imagem": "images/luvas/luva_08.png",
+            "link": "https://www.google.com/search?q=luva+boxe+semipro"
+        },
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Avançado",
+            "nome": "Luva Competition Elite",
+            "imagem": "images/luvas/luva_10.png",
+            "link": "https://www.google.com/search?q=luva+boxe+elite"
+        },
+        {
+            "categoria": "Luva",
+            "sub_categoria": "Avançado",
+            "nome": "Luva Master Gold",
+            "imagem": "images/luvas/luva_15.png",
+            "link": "https://www.google.com/search?q=luva+boxe+gold"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Iniciante",
+            "nome": "Caneleira Soft Guard",
+            "imagem": "images/caneleiras/caneleira_01.png",
+            "link": "https://www.google.com/search?q=caneleira+muay+thai+soft"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Iniciante",
+            "nome": "Caneleira Flex",
+            "imagem": "images/caneleiras/caneleira_03.png",
+            "link": "https://www.google.com/search?q=caneleira+flex"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Intermediário",
+            "nome": "Caneleira Iron Shin",
+            "imagem": "images/caneleiras/caneleira_06.png",
+            "link": "https://www.google.com/search?q=caneleira+muay+thai+iron"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Intermediário",
+            "nome": "Caneleira Pro Grip",
+            "imagem": "images/caneleiras/caneleira_09.png",
+            "link": "https://www.google.com/search?q=caneleira+pro+grip"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Avançado",
+            "nome": "Caneleira Armor Max",
+            "imagem": "images/caneleiras/caneleira_12.png",
+            "link": "https://www.google.com/search?q=caneleira+muay+thai+armor"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Avançado",
+            "nome": "Caneleira Titan Elite",
+            "imagem": "images/caneleiras/caneleira_18.png",
+            "link": "https://www.google.com/search?q=caneleira+titan"
+        },
+        {
+            "categoria": "Protetor Bucal",
+            "sub_categoria": "Iniciante",
+            "nome": "Protetor Basic Clear",
+            "imagem": "images/protetores/protetor_01.jpg",
+            "link": "https://www.google.com/search?q=protetor+bucal+basico"
+        },
+        {
+            "categoria": "Protetor Bucal",
+            "sub_categoria": "Intermediário",
+            "nome": "Protetor Gel Fit",
+            "imagem": "images/protetores/protetor_01.jpg",
+            "link": "https://www.google.com/search?q=protetor+bucal+gel"
+        },
+        {
+            "categoria": "Protetor Bucal",
+            "sub_categoria": "Avançado",
+            "nome": "Protetor Shock Master",
+            "imagem": "images/protetores/protetor_01.jpg",
+            "link": "https://www.google.com/search?q=protetor+bucal+shock"
+        }
+    ]
+}
