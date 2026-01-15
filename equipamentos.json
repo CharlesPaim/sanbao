@@ -37,23 +37,86 @@
         {
             "categoria": "Caneleira",
             "sub_categoria": "Primeiros Passos no Kung Fu",
-            "nome": "Caneleira Soft Guard",
-            "imagem": "images/caneleiras/caneleira_01.png",
-            "link": "https://www.google.com/search?q=caneleira+soft"
+            "nome": "Olimpo Power X",
+            "imagem": "images/caneleiras/Primeiros_Passos_Olimpo.jpg",
+            "link": "https://olimpoesportes.com.br/products/caneleira-muay-thai-power-x-profissional"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Primeiros Passos no Kung Fu",
+            "nome": "Everlast Prime",
+            "imagem": "images/caneleiras/Primeiros_Passos_Everlast.jpg",
+            "link": "https://www.everlastbrasil.com/caneleira-everlast-prime-cinza-verde/p"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Caneleira Iron Shin",
-            "imagem": "images/caneleiras/caneleira_06.png",
-            "link": "https://www.google.com/search?q=caneleira+iron"
+            "nome": "Mks Classic",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Mks_Classic.jpg",
+            "link": "https://www.mkscombat.com.br/acessorios/caneleira-muay-thai-kickboxing-mks-classic"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Pulser 20mm",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Pulser.png",
+            "link": "https://www.pulserfight.com.br/caneleiras"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Decathlon Outshock 500",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Decathlon.png",
+            "link": "https://www.decathlon.com.br/caneleirasprotecoes-de-pes-de-boxe-e-muay-thai-adulto-500-preto-8751236-outshock/p"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Spank Profissional",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Spawk.jpg",
+            "link": "https://www.spank.com.br/protetores/caneleira/"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Pretorian Elite",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Pretorian.jpg",
+            "link": "https://www.pretorian.com.br/caneleira-muay-thai-pretorian-elite/p"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Venum Challenger",
+            "imagem": "images/caneleiras/Aprimorando_Tecnica_Venum.jpg",
+            "link": "https://www.venum.com.br/caneleira-venum-challenger-preto-preto.html"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Pronto para o Combate",
-            "nome": "Caneleira Armor Max",
-            "imagem": "images/caneleiras/caneleira_12.png",
-            "link": "https://www.google.com/search?q=caneleira+armor"
+            "nome": "Jugui Carbon",
+            "imagem": "images/caneleiras/Pronto_Combate_Jugui_Carbon.jpg",
+            "link": "https://jugui.com.br/protecao/caneleiras/caneleira-de-combate-linha-carbon-preta.html"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Maximum Classic",
+            "imagem": "images/caneleiras/Pronto_Combate_Maximum_Classic.jpg",
+            "link": "https://www.maximumshop.com.br/equipamentos/caneleira-muay-thai-e-kickboxing/caneleira-muay-thai-e-kickboxing-maximum-classic-black"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Mks Energy",
+            "imagem": "images/caneleiras/Pronto_Combate_Mks_Energy.jpg",
+            "link": "https://www.mkscombat.com.br/acessorios/caneleira-de-muay-thai-e-kickboxing-mks-energy"
+        },
+        {
+            "categoria": "Caneleira",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Pulser 30mm",
+            "imagem": "images/caneleiras/Pronto_Combate_Pulser_30mm.jpg",
+            "link": "https://www.pulserfight.com.br/caneleiras"
         },
         {
             "categoria": "Protetor Bucal",
