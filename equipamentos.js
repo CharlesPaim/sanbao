@@ -14,8 +14,9 @@ async function loadEquipamentos() {
             const equipamentosDaCategoria = equipamentos.filter(e => e.categoria === catNome);
 
             if (equipamentosDaCategoria.length > 0) {
+                const sectionId = catNome.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '');
                 html += `
-                    <section class="categoria-section">
+                    <section class="categoria-section" id="${sectionId}">
                         <h2 class="categoria-title">${catNome}</h2>
                 `;
 

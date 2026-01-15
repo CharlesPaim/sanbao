@@ -7,6 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .category-nav-link {
+            padding: 8px 16px;
+            background: var(--card);
+            color: var(--text);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .category-nav-link:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        body.light-theme .category-nav {
+            background: rgba(0, 0, 0, 0.02);
+            border-color: rgba(0, 0, 0, 0.05);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         .equipamentos-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -144,6 +186,13 @@
     <main>
         <div class="equipamentos-container">
             <a href="index.html" class="btn-voltar">← Voltar para Vídeos</a>
+
+            <nav class="category-nav">
+                <a href="#luva-sanda" class="category-nav-link">🥊 Luva Sanda</a>
+                <a href="#luva-choy-lay-fut" class="category-nav-link">🥊 Luva CLF</a>
+                <a href="#caneleira" class="category-nav-link">🛡️ Caneleiras</a>
+                <a href="#protetor-bucal" class="category-nav-link">👄 Protetor Bucal</a>
+            </nav>
             <div id="equipamentos-app">
                 <!-- Conteúdo será injetado pelo JavaScript -->
                 <p style="text-align: center; color: var(--muted);">Carregando indicações...</p>
