@@ -19,8 +19,8 @@ async function loadEquipamentos() {
                         <h2 class="categoria-title">${catNome}</h2>
                 `;
 
-                // Agrupar por Sub Categoria: Iniciante, Intermediário, Avançado
-                const subCategorias = ["Iniciante", "Intermediário", "Avançado"];
+                // Agrupar por Sub Categoria com os nomes lúdicos
+                const subCategorias = ["Primeiros Passos no Kung Fu", "Aprimorando a Técnica", "Pronto para o Combate"];
 
                 subCategorias.forEach(subCat => {
                     const itens = equipamentosDaCategoria.filter(e => e.sub_categoria === subCat);
