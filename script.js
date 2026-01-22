@@ -1,11 +1,21 @@
 const catalogo = {
     branca: {
         nome: "Faixa Branca",
-        chutes: [],
+        chutes: [
+            { titulo: "1 - Dan Toi (Frontal perna de trás)", videoId: "1pCcrKE51Qa7Fhr4SE2PhqQ0M67rJG9DF" },
+            { titulo: "2 - Baan Toi (Peito do pé perna de trás)", videoId: "1ewFRPKGRv3_csnu-06g1AGUykTstMaXf" },
+            { titulo: "3 - Chang Toi (Faca do pé perna de trás)", videoId: "1cIsIaGy7QcQ7OQTb3tk4Ag3ANW6f-KDT" },
+            { titulo: "4 - Dan Toi (Frontal perna da frente)", videoId: "1iodexDdnlkivIPOl7HmCM_MO7tKYP3G3" },
+            { titulo: "5 - Baan Toi (Peito do pé perna da frente)", videoId: "17jbvy5ZMQot_LJlSLgIWeRJ7S5WAGkr3" },
+            { titulo: "6 - Chang Toi (Faca do pé perna da frente)", videoId: "1TS5hNWNojpst2J-wPRvoFSuo2uwGkrzy" }
+        ],
         basicos: [
             { titulo: "Todos os Básicos", videoId: "1x3oJugXzZtdygLZSW8CKZZOB3fR0Gvq0" }
         ],
-        taolus: []
+        taolus: [
+            { titulo: "Gay Boon Kyun Yet (Forma básica de mão n. 1)", videoId: "1i1ZwBExFmTEkZUykKi_ROAPkp9QIytbE" },
+            { titulo: "Gay Boon Ma Bo Yet (Forma básica de postura n. 1)", videoId: "1OMU85v-Rpufn-jrll8zP4IX2F-qAI4Jy" }
+        ]
     },
     amarela: {
         nome: "Faixa Amarela",
@@ -54,7 +64,13 @@ const catalogo = {
     },
     laranja: {
         nome: "Faixa Laranja",
-        chutes: [],
+        chutes: [
+            { titulo: "1 - Loi Bai Pek Gwaa Toi (Pisando o pé a frente de fora para dentro)", videoId: "16mvrLrf0gmkVAsWqyL_GbnH3Fru24S2I" },
+            { titulo: "2 - Oi Bai Pek Gwaa Toi (Pisando o pé a frente de dentro para fora)", videoId: "1OXFzUdrItdP6pOjoTNEHhGVaSozH7vfg" },
+            { titulo: "3 - Seung Dan Toi (Frontal duplo)", videoId: "1TZV8LBAMgV-euRPoT_Dqs4YcLt459EZj" },
+            { titulo: "4 - Seung Baan Toi (Peito do pé duplo)", videoId: "12lV5TgkCh84uAUSj2xM0Ue3KUiLlopSu" },
+            { titulo: "5 - Seung Chang Toi (Faca do pé duplo)", videoId: "1jKm3bD6r5SqSAK30jT8tU6YI56k_ER5a" }
+        ],
         basicos: [
             { titulo: "01 - Kwan Sao", videoId: "1Dl2rz6xqVtWdGpkCB3EAQq1yrgIAutT8" },
             { titulo: "02 - Kong Jerng", videoId: "1Fg_96B0lSH344ntI8yUCJLwqz70SDeqC" },
@@ -67,14 +83,71 @@ const catalogo = {
             { titulo: "09 - Pie Jah/Big Jah/Pow Jah/Chong Jah", videoId: "1Khldu2MaQfb3OzZmGpb9GO_uCoVk7x0b" },
             { titulo: "10 - Wang Deng Choy", videoId: "1wDzRJvZ3LVazmt9YidIFy3VfE3sK7nAq" }
         ],
+        basicos_complementares: [
+            { titulo: "1 - Gwa choy - Cum Jern - Poon Kue - Chi sin choy - Biu jong", videoId: "1TGKHQDhdTRccG03D8Q5cn0fSJpDOwSDh" },
+            { titulo: "2 - Chin lah - Poon kue - Cum jern - Chop choy", videoId: "1UjyGVKKO4ILaeZsi3hDxz6Sx-xh0jpVc" },
+            { titulo: "3 - Chin lah - Poon kue - Serng choy lahp", videoId: "1RqLYtXtmjqVAC7vrF4J0_NKRdLNWQFhW" },
+            { titulo: "4 - Fu jow - Fu hay - Pak Girk - Yut Lahp - Joi lahp - Cheung ahn choy", videoId: "1NK4uepk9CKG6mzTFxlkaU3i2KOHNbdcQ" }
+        ],
         taolus: [
             { titulo: "Ng Lun Kyun (Var. 1)", videoId: "1oroM0dj3xkVEuY65MPQjD-LL172D-5Jj" },
             { titulo: "Ng Lun Kyun (Var. 2)", videoId: "1cTvDuLAnRQLglfEm-iL1rBBXN-gbOqUx" },
             { titulo: "Ng Lun Kyun (Var. 3)", videoId: "14eVCJqj_wdKHXbzMUs9J4XnK7xRrd7Ar" }
         ]
     },
-    jade: { nome: "Faixa Jade", chutes: [], basicos: [], taolus: [] },
-    verde: { nome: "Faixa Verde", chutes: [], basicos: [], taolus: [] },
+    jade: {
+        nome: "Faixa Jade",
+        chutes: [
+            { titulo: "1 - Chute em curva", videoId: "1G8TiRtZ-DPSGSk3sgq0v3K2wWmKA11Ck" },
+            { titulo: "2 - Chute em curva (pé da frente)", videoId: "17Oa-xxPRpm6oUP-YpA5efQz38GUT5FIO" },
+            { titulo: "3 - Wah soh toi (gancho)", videoId: "1biJiqIeoELezUrpRu4yKWCyoEitpodIz" },
+            { titulo: "4 - Jaat hay wah soh toi (sobrepasso gancho)", videoId: "1M_KHCseR8MqGSwPOLYHZgCJC2apr_4-z" },
+            { titulo: "5 - Juen sun chang toi (faca do pé pelas costas)", videoId: "1po2mg--RZyi0o3e8_rbd0JNVIUiHzM93" },
+            { titulo: "6 - Passo juen sun chang toi (passo faca do pé pelas costas)", videoId: "1taKXTR-f-gMI1VYh79JY7hlVMapInpTC" }
+        ],
+        basicos: [
+            { titulo: "1 - Mahn Kwun", videoId: "1q1vTqeZg5a3Ui-zC0DxzRLMysgdxX2PK" },
+            { titulo: "2 - Liu Kwun", videoId: "1VUv88lpRTTw-rn3hYzWogbu_c1HS-sl3" },
+            { titulo: "3 - Pah Kwun - Lah kwun", videoId: "1oaXMNbVxNgIxD-bWn6qJYqLrH5_giZi-" },
+            { titulo: "4 - Low soi kwun", videoId: "1sBhP-tsrbt0bUEAn49a6x-lJo8PPl7wJ" },
+            { titulo: "5 - How kwun", videoId: "1rd_E4istjrsanbXCjEjiiyMK9K7UKmoF" },
+            { titulo: "6 - Da kwun", videoId: "1oBw02HoZZqJgLVP-4kTPtnEnOW_xkyG7" },
+            { titulo: "7 - Jeet Kwun", videoId: "1A3oNa2Gxc6htJ7WuLaBlzgRtzGtG-n6s" },
+            { titulo: "8 - Wang da kwun", videoId: "1BpVfdAUjFQkZYh3Fhkb7Cg8IK5zrUER7" },
+            { titulo: "9 - Ping Kwun", videoId: "1JbcuXyrGVEpMGG6fcO2AlnTVAekkstiG" },
+            { titulo: "10 - So ho kwun", videoId: "1GhpQTyGsuU01A7oTZSr0UVlwC5m0vT36" }
+        ],
+        basicos_complementares: [
+            { titulo: "1 - Low soi kwun - da kwun - jeet kwun", videoId: "1oU5TBuw8_JBdFDj2Z_fcCbIJ3rJERZnX" },
+            { titulo: "2 - Mahn kwun - low ma - tic kwun", videoId: "1CcTwoeEhAVElJNW1OPn2BQLNH-IGAJet" },
+            { titulo: "3 - Pah kwun - lap kwun - so ho kwun", videoId: "1e5-zeV92SgY4--gMRp-opYbpy8DMeNt2" }
+        ],
+        taolus: [
+            { titulo: "Sil Lum Kwun (Bastão Shaolin)", videoId: "1eY_KQRSd2-b-O5devzeWr_m0peofLX3L" }
+        ]
+    },
+    verde: {
+        nome: "Faixa Verde",
+        chutes: [
+            { titulo: "1 - Dan Toi (Frontal empurrando)", videoId: "1NliPEC6svW6ELPr6K4W5q-iq3Q33HiVg" },
+            { titulo: "2 - Baan toi + Chang toi (peito do pé + faca do pé com a mesma perna)", videoId: "1ChlxLWr0NcYC-Dg91Mfh9xRsOFFfq86z" },
+            { titulo: "3 - Soh girk (rasteira frontal)", videoId: "1k1S286wF0CQjEkGKk4ptImONkMSR0GuA" },
+            { titulo: "4 - Baan toi juen sun (360º peito do pé)", videoId: "1309FGMq0aUM8GPa66zNbP_Zy1HmVaQj2" },
+            { titulo: "5 - Juen sun wang soh toi (reverso)", videoId: "1ng6JIYbs0vkxGdm62q3s3ZMmHdAB8hDl" },
+            { titulo: "6 - Passo juen sun wang soh toi (passo + reverso)", videoId: "1LtUqQtnRKKDoKnz_vKARIQ6uIUYDkm80" }
+        ],
+        basicos: [
+            { titulo: "1 - Jaat haay - Chong fu", videoId: "1SSy5MPuuCzU4RZ4OIZjp6XTWtaFQuBQb" },
+            { titulo: "2 - Chin lah - yum chop choy- tek girk - po choy", videoId: "1D0t91NpD-mhQA1UXLQmECqpBtnLlicfY" },
+            { titulo: "3 - Chin lah - sern poon kue - soh girk", videoId: "1O-lcE0EheLqepv_VQZV6a04_9VNhQu0U" },
+            { titulo: "4 - Gwa choy - gong jern - pie jahng - loon kue", videoId: "1l4OqnOumQkRU_bfPeciJFC2yf14889fS" },
+            { titulo: "5 - Gong jern (3x) - fahn jong choy", videoId: "1YqFGFzJTBknrp2MZbPVKKguSBA8lOzYm" },
+            { titulo: "6 - Fahn jong choy - poon kue - kwan sao", videoId: "1pFmXZzJAhjht16xFO-r0IR7rYa7kCQFJ" }
+        ],
+        taolus: [
+            { titulo: "Siu Mui Fah Kyun", videoId: "17-poxSYGw3W6tiTBJ0KGcnYnVCENW6D2" }
+        ]
+    },
     roxa: {
         nome: "Faixa Roxa",
         chutes: [],
@@ -143,6 +216,7 @@ function faixa(id) {
 
     ${categoria("Chutes", f.chutes, id)}
     ${categoria("Básicos", f.basicos, id)}
+    ${f.basicos_complementares ? categoria("Básicos Complementares", f.basicos_complementares, id) : ""}
     ${categoria("Taolu´s", f.taolus, id)}
   `;
 }
