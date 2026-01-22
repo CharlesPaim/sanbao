@@ -150,7 +150,13 @@ const catalogo = {
     },
     roxa: {
         nome: "Faixa Roxa",
-        chutes: [],
+        chutes: [
+            { titulo: "1 - Hou sou toi (rasteira 360º por trás)", videoId: "1gtmee8lApfPfXhxk18vbKI33MWdFOKjR" },
+            { titulo: "2 - Baan toi + Juen sun chang toi (peito do pé + faca do pé pelas costas)", videoId: "12QsgbyAv9iB5v_xZJy1VgD79Dsu4xZhN" },
+            { titulo: "3 - Passo jaat hay dan toi", videoId: "1Gua-B42q8esr8oPaaYiqGYtOh4FLpcEd" },
+            { titulo: "4 - Passo jaat hay baan toi", videoId: "1nsrurWWBYBl4HxLPgRd5iPryXRTmdYQP" },
+            { titulo: "5 - Passo jaat hay chang toi", videoId: "1uO5WT8tA_Cy-tcFSfCHuVFh2-5elgZDv" }
+        ],
         basicos: [
             { titulo: "1º Básico", videoId: "1cF8m0Goi-QnWNPoIhaix8JprWmgrGZbz" },
             { titulo: "2º Básico", videoId: "1YFzDYpfAMeCRekphbhejXTvQWqTBMcfe" },
@@ -181,8 +187,8 @@ const catalogo = {
             { titulo: "5º Básico", videoId: "1eQYJYkCtfBU1w2Qfyan1bOuSZgONGrGH" }
         ],
         taolus: [
-            { titulo: "Ching Jong", videoId: "15Lvm_o9Gj74WKnh4wSxHCXyzYOIJbBBy" },
-            { titulo: "Tut Tsen Kyun", videoId: "1G6G4zn2xNtbCiy7yACfIn5F2DP4C8wgJ" }
+            { titulo: "Ching Jong", videoId: "1QbB2gZQ-PuJQFhkpASY_JIacBwaM8UZc" },
+            { titulo: "Tut Tsen Kyun", videoId: "1CgYit_gKECt0xXOERqZ6NKpe_3YG0i2d" }
         ]
     },
     marrom_claro: { nome: "Faixa Marrom Claro", chutes: [], basicos: [], taolus: [] },
