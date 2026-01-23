@@ -2,193 +2,214 @@ const catalogo = {
     branca: {
         nome: "Faixa Branca",
         chutes: [
-            { titulo: "1 - Dan Toi (Frontal perna de trás)", videoId: "1pCcrKE51Qa7Fhr4SE2PhqQ0M67rJG9DF" },
-            { titulo: "2 - Baan Toi (Peito do pé perna de trás)", videoId: "1ewFRPKGRv3_csnu-06g1AGUykTstMaXf" },
-            { titulo: "3 - Chang Toi (Faca do pé perna de trás)", videoId: "1cIsIaGy7QcQ7OQTb3tk4Ag3ANW6f-KDT" },
-            { titulo: "4 - Dan Toi (Frontal perna da frente)", videoId: "1iodexDdnlkivIPOl7HmCM_MO7tKYP3G3" },
-            { titulo: "5 - Baan Toi (Peito do pé perna da frente)", videoId: "17jbvy5ZMQot_LJlSLgIWeRJ7S5WAGkr3" },
-            { titulo: "6 - Chang Toi (Faca do pé perna da frente)", videoId: "1TS5hNWNojpst2J-wPRvoFSuo2uwGkrzy" }
+            { num: "01", cantones: "Dan Toi", portugues: "Frontal perna de trás", videoId: "1pCcrKE51Qa7Fhr4SE2PhqQ0M67rJG9DF" },
+            { num: "02", cantones: "Baan Toi", portugues: "Peito do pé perna de trás", videoId: "1ewFRPKGRv3_csnu-06g1AGUykTstMaXf" },
+            { num: "03", cantones: "Chang Toi", portugues: "Faca do pé perna de trás", videoId: "1cIsIaGy7QcQ7OQTb3tk4Ag3ANW6f-KDT" },
+            { num: "04", cantones: "Dan Toi", portugues: "Frontal perna da frente", videoId: "1iodexDdnlkivIPOl7HmCM_MO7tKYP3G3" },
+            { num: "05", cantones: "Baan Toi", portugues: "Peito do pé perna da frente", videoId: "17jbvy5ZMQot_LJlSLgIWeRJ7S5WAGkr3" },
+            { num: "06", cantones: "Chang Toi", portugues: "Faca do pé perna da frente", videoId: "1TS5hNWNojpst2J-wPRvoFSuo2uwGkrzy" }
         ],
         basicos: [
-            { titulo: "Todos os Básicos", videoId: "1x3oJugXzZtdygLZSW8CKZZOB3fR0Gvq0" }
+            { num: "01", cantones: "Jik Choy", portugues: "", videoId: "1d7oGmgzMVC4PfCPKQT_Pa7JwvD1nhJsh" },
+            { num: "02", cantones: "Chin Lah", portugues: "", videoId: "10dSGyQP0ysiE0UfiuNn7M09xhWNqWDxJ" },
+            { num: "03", cantones: "Chum Cue", portugues: "", videoId: "1Tmxn0dFbeJ6bzCRID0wlfRknUSEaP1DT" },
+            { num: "04", cantones: "Cum Jern", portugues: "", videoId: "12Q6U8Gr2w0Y3KuWCx8sVB6uSyXHd4Ijm" },
+            { num: "05", cantones: "Pow Jern", portugues: "", videoId: "1ZUcr5rtC1_6h1WbDYf1flj6DMVNmUvrG" },
+            { num: "06", cantones: "Yeung Chop Choy", portugues: "", videoId: "1Du9JfZaaTIOWDor3tfa8q4gTZAnoQ6BW" },
+            { num: "07", cantones: "Yum Chop Choy", portugues: "", videoId: "1XjOgQr2q3n0-XAm05lBGYqNzMyIjf9in" },
+            { num: "08", cantones: "Cheung Ahn Choy", portugues: "", videoId: "1n7DF7SlxrNmUSieXJXZL-us4Bh9TXnUH" },
+            { num: "09", cantones: "Gwa Choy", portugues: "", videoId: "1OfoDGDwDJ9qv0zhn-nLkFPneGhea0iZQ" },
+            { num: "10", cantones: "Biu Jong Choy", portugues: "", videoId: "12Vn0zbvdwahrbu2U8s20GerVndyV3luE" }
         ],
         taolus: [
-            { titulo: "Gay Boon Kyun Yet (Forma básica de mão n. 1)", videoId: "1i1ZwBExFmTEkZUykKi_ROAPkp9QIytbE" },
-            { titulo: "Gay Boon Ma Bo Yet (Forma básica de postura n. 1)", videoId: "1OMU85v-Rpufn-jrll8zP4IX2F-qAI4Jy" }
+            { cantones: "Gay Boon Kyun Yet", portugues: "Forma básica de mão n. 1", videoId: "1i1ZwBExFmTEkZUykKi_ROAPkp9QIytbE" },
+            { cantones: "Gay Boon Ma Bo Yet", portugues: "Forma básica de postura n. 1", videoId: "1OMU85v-Rpufn-jrll8zP4IX2F-qAI4Jy" }
         ]
     },
     amarela: {
         nome: "Faixa Amarela",
         chutes: [
             {
-                titulo: "Lōi Bai Leen Toi – Batendo na Mão",
+                num: "01",
+                cantones: "Lōi Bai Leen Toi",
+                portugues: "Batendo na Mão",
                 videoId: "1S4FjotZLvj90tSWmD8MbBrDaktVvSu9p"
             },
             {
-                titulo: "Tin Toi – Perna da Frente",
+                num: "02",
+                cantones: "Tin Toi",
+                portugues: "Perna da Frente",
                 videoId: "1M57iZX-OrZgcY_idQnKayMcAvFmQiipd"
             },
             {
-                titulo: "Tin Toi – Perna de Trás",
+                num: "03",
+                cantones: "Tin Toi",
+                portugues: "Perna de Trás",
                 videoId: "1Bff9nf8AEiCWNJc6ac5E_nfJnyMBahZW"
             },
             {
-                titulo: "Jaat Hay Dan Toi – Sobrepasso",
+                num: "04",
+                cantones: "Jaat Hay Dan Toi",
+                portugues: "Sobrepasso",
                 videoId: "10DdlH-bN_oSoibtdJH17OjBWt2MiUgQT"
             },
             {
-                titulo: "Jaat Hay Baan Toi – Sobrepasso",
+                num: "05",
+                cantones: "Jaat Hay Baan Toi",
+                portugues: "Sobrepasso",
                 videoId: "1zpHFMMCpzKBerJw-4ea435jPHIaLfcEv"
             },
             {
-                titulo: "Jaat Hay Chang Toi – Sobrepasso",
+                num: "06",
+                cantones: "Jaat Hay Chang Toi",
+                portugues: "Sobrepasso",
                 videoId: "1uaNOkvaH3QkLRMJ30kSxeR6QJcWXEmVw"
             }
         ],
         basicos: [
-            { titulo: "1º Fu Jow", videoId: "1IiPlyJPJdvRIM16roaNJPt3Yqc1bDhm0" },
-            { titulo: "2º Choy Lahp", videoId: "1iQzBN5Pno0g7Abfc_stYCHlILSDZBEr7" },
-            { titulo: "3º Yum Jern", videoId: "1-kj_bmJPNQqJNBQkGIAi-r02Y1p90rPO" },
-            { titulo: "4º Fahn Jong Choy", videoId: "1S4vZc8ih5npmWvU91Pr1qnYPhWDoRSoL" },
-            { titulo: "5º Cup Choy", videoId: "1Dq0GLfezPz03fWr5CHqUhKlxYZaU0jpw" },
-            { titulo: "6º Poon Kue Sow Choy", videoId: "1gPnAHTkqkHZtdZsq-Wtifob6e8FPRTaR" },
-            { titulo: "7º Gwa Choy Cum Jern", videoId: "1mlk-d7zCgKpJqMRnp5neak6P4VFOW3s3" },
-            { titulo: "8º Gwa Choy Pow Choy", videoId: "1bILRi5dZfjydi3_y7L8BZPk0yB8W3pqh" },
-            { titulo: "9º Been Choy", videoId: "1pm4MfsR0eL4Gv2eNNiN-c05YBKMN5UDB" },
-            { titulo: "10º Loong Kue", videoId: "1b6SbRLDRHx-fRxmn1Mr-N3RmSq0chylN" }
+            { num: "01", cantones: "Fu Jow", videoId: "1IiPlyJPJdvRIM16roaNJPt3Yqc1bDhm0" },
+            { num: "02", cantones: "Choy Lahp", videoId: "1iQzBN5Pno0g7Abfc_stYCHlILSDZBEr7" },
+            { num: "03", cantones: "Yum Jern", videoId: "1-kj_bmJPNQqJNBQkGIAi-r02Y1p90rPO" },
+            { num: "04", cantones: "Fahn Jong Choy", videoId: "1S4vZc8ih5npmWvU91Pr1qnYPhWDoRSoL" },
+            { num: "05", cantones: "Cup Choy", videoId: "1Dq0GLfezPz03fWr5CHqUhKlxYZaU0jpw" },
+            { num: "06", cantones: "Poon Kue Sow Choy", videoId: "1gPnAHTkqkHZtdZsq-Wtifob6e8FPRTaR" },
+            { num: "07", cantones: "Gwa Choy Cum Jern", videoId: "1mlk-d7zCgKpJqMRnp5neak6P4VFOW3s3" },
+            { num: "08", cantones: "Gwa Choy Pow Choy", videoId: "1bILRi5dZfjydi3_y7L8BZPk0yB8W3pqh" },
+            { num: "09", cantones: "Been Choy", videoId: "1pm4MfsR0eL4Gv2eNNiN-c05YBKMN5UDB" },
+            { num: "10", cantones: "Loong Kue", videoId: "1b6SbRLDRHx-fRxmn1Mr-N3RmSq0chylN" }
         ],
         taolus: [
-            { titulo: "Gay Boon Kyun Yee", videoId: "1CxV0z6PtNfQg5L6gXI8lrRvsfJouMXmU" },
-            { titulo: "Gay Boon Ma Bo Yee", videoId: "17qlphhCq7w1d01XVCk5Dz3aIvtJ5EGSo" }
+            { cantones: "Gay Boon Kyun Yee", videoId: "1CxV0z6PtNfQg5L6gXI8lrRvsfJouMXmU" },
+            { cantones: "Gay Boon Ma Bo Yee", videoId: "17qlphhCq7w1d01XVCk5Dz3aIvtJ5EGSo" }
         ]
     },
     laranja: {
         nome: "Faixa Laranja",
         chutes: [
-            { titulo: "1 - Loi Bai Pek Gwaa Toi (Pisando o pé a frente de fora para dentro)", videoId: "16mvrLrf0gmkVAsWqyL_GbnH3Fru24S2I" },
-            { titulo: "2 - Oi Bai Pek Gwaa Toi (Pisando o pé a frente de dentro para fora)", videoId: "1OXFzUdrItdP6pOjoTNEHhGVaSozH7vfg" },
-            { titulo: "3 - Seung Dan Toi (Frontal duplo)", videoId: "1TZV8LBAMgV-euRPoT_Dqs4YcLt459EZj" },
-            { titulo: "4 - Seung Baan Toi (Peito do pé duplo)", videoId: "12lV5TgkCh84uAUSj2xM0Ue3KUiLlopSu" },
-            { titulo: "5 - Seung Chang Toi (Faca do pé duplo)", videoId: "1jKm3bD6r5SqSAK30jT8tU6YI56k_ER5a" }
+            { num: "01", cantones: "Loi Bai Pek Gwaa Toi", portugues: "Pisando o pé a frente de fora para dentro", videoId: "16mvrLrf0gmkVAsWqyL_GbnH3Fru24S2I" },
+            { num: "02", cantones: "Oi Bai Pek Gwaa Toi", portugues: "Pisando o pé a frente de dentro para fora", videoId: "1OXFzUdrItdP6pOjoTNEHhGVaSozH7vfg" },
+            { num: "03", cantones: "Seung Dan Toi", portugues: "Frontal duplo", videoId: "1TZV8LBAMgV-euRPoT_Dqs4YcLt459EZj" },
+            { num: "04", cantones: "Seung Baan Toi", portugues: "Peito do pé duplo", videoId: "12lV5TgkCh84uAUSj2xM0Ue3KUiLlopSu" },
+            { num: "05", cantones: "Seung Chang Toi", portugues: "Faca do pé duplo", videoId: "1jKm3bD6r5SqSAK30jT8tU6YI56k_ER5a" }
         ],
         basicos: [
-            { titulo: "01 - Kwan Sao", videoId: "1Dl2rz6xqVtWdGpkCB3EAQq1yrgIAutT8" },
-            { titulo: "02 - Kong Jerng", videoId: "1Fg_96B0lSH344ntI8yUCJLwqz70SDeqC" },
-            { titulo: "03 - Gong Jerng", videoId: "1We471FlYx9QGwsXeHwLRaosZAC3L6kI_" },
-            { titulo: "04 - Chin Lah/Dahn Lah", videoId: "1JXiOLu9BK233IJrC4FzKSRa-xfNSg_77" },
-            { titulo: "05 - Pak Sao/Yam Kiu", videoId: "1uU4BQnzFbi_WR3DNzZcoC9Msq3DgcJdm" },
-            { titulo: "06 - Cum Jerng/Gout Sao", videoId: "17oUUSofI6BeGEEoLsI7qAjvB6NFUadRU" },
-            { titulo: "07 - Gwa/Pao/Gwa/Sao", videoId: "1Q0pOV0juQ650ojpfUv9wmUqUO4_6TwkX" },
-            { titulo: "08 - Tsin Choy", videoId: "1655k7mGlsVUtlN2m2AB7FnjxN8hL2kVM" },
-            { titulo: "09 - Pie Jah/Big Jah/Pow Jah/Chong Jah", videoId: "1Khldu2MaQfb3OzZmGpb9GO_uCoVk7x0b" },
-            { titulo: "10 - Wang Deng Choy", videoId: "1wDzRJvZ3LVazmt9YidIFy3VfE3sK7nAq" }
+            { num: "01", cantones: "Kwan Sao", videoId: "1Dl2rz6xqVtWdGpkCB3EAQq1yrgIAutT8" },
+            { num: "02", cantones: "Kong Jerng", videoId: "1Fg_96B0lSH344ntI8yUCJLwqz70SDeqC" },
+            { num: "03", cantones: "Gong Jerng", videoId: "1We471FlYx9QGwsXeHwLRaosZAC3L6kI_" },
+            { num: "04", cantones: "Chin Lah / Dahn Lah", videoId: "1JXiOLu9BK233IJrC4FzKSRa-xfNSg_77" },
+            { num: "05", cantones: "Pak Sao / Yam Kiu", videoId: "1uU4BQnzFbi_WR3DNzZcoC9Msq3DgcJdm" },
+            { num: "06", cantones: "Cum Jerng / Gout Sao", videoId: "17oUUSofI6BeGEEoLsI7qAjvB6NFUadRU" },
+            { num: "07", cantones: "Gwa / Pao / Gwa / Sao", videoId: "1Q0pOV0juQ650ojpfUv9wmUqUO4_6TwkX" },
+            { num: "08", cantones: "Tsin Choy", videoId: "1655k7mGlsVUtlN2m2AB7FnjxN8hL2kVM" },
+            { num: "09", cantones: "Pie Jah / Big Jah / Pow Jah / Chong Jah", videoId: "1Khldu2MaQfb3OzZmGpb9GO_uCoVk7x0b" },
+            { num: "10", cantones: "Wang Deng Choy", videoId: "1wDzRJvZ3LVazmt9YidIFy3VfE3sK7nAq" }
         ],
         basicos_complementares: [
-            { titulo: "1 - Gwa choy - Cum Jern - Poon Kue - Chi sin choy - Biu jong", videoId: "1TGKHQDhdTRccG03D8Q5cn0fSJpDOwSDh" },
-            { titulo: "2 - Chin lah - Poon kue - Cum jern - Chop choy", videoId: "1UjyGVKKO4ILaeZsi3hDxz6Sx-xh0jpVc" },
-            { titulo: "3 - Chin lah - Poon kue - Serng choy lahp", videoId: "1RqLYtXtmjqVAC7vrF4J0_NKRdLNWQFhW" },
-            { titulo: "4 - Fu jow - Fu hay - Pak Girk - Yut Lahp - Joi lahp - Cheung ahn choy", videoId: "1NK4uepk9CKG6mzTFxlkaU3i2KOHNbdcQ" }
+            { num: "01", cantones: "Gwa choy - Cum Jern - Poon Kue - Chi sin choy - Biu jong", videoId: "1TGKHQDhdTRccG03D8Q5cn0fSJpDOwSDh" },
+            { num: "02", cantones: "Chin lah - Poon kue - Cum jern - Chop choy", videoId: "1UjyGVKKO4ILaeZsi3hDxz6Sx-xh0jpVc" },
+            { num: "03", cantones: "Chin lah - Poon kue - Serng choy lahp", videoId: "1RqLYtXtmjqVAC7vrF4J0_NKRdLNWQFhW" },
+            { num: "04", cantones: "Fu jow - Fu hay - Pak Girk - Yut Lahp - Joi lahp - Cheung ahn choy", videoId: "1NK4uepk9CKG6mzTFxlkaU3i2KOHNbdcQ" }
         ],
         taolus: [
-            { titulo: "Ng Lun Kyun (Var. 1)", videoId: "1oroM0dj3xkVEuY65MPQjD-LL172D-5Jj" },
-            { titulo: "Ng Lun Kyun (Var. 2)", videoId: "1cTvDuLAnRQLglfEm-iL1rBBXN-gbOqUx" },
-            { titulo: "Ng Lun Kyun (Var. 3)", videoId: "14eVCJqj_wdKHXbzMUs9J4XnK7xRrd7Ar" }
+            { cantones: "Ng Lun Kyun (Var. 1)", videoId: "1oroM0dj3xkVEuY65MPQjD-LL172D-5Jj" },
+            { cantones: "Ng Lun Kyun (Var. 2)", videoId: "1cTvDuLAnRQLglfEm-iL1rBBXN-gbOqUx" },
+            { cantones: "Ng Lun Kyun (Var. 3)", videoId: "14eVCJqj_wdKHXbzMUs9J4XnK7xRrd7Ar" }
         ]
     },
     jade: {
         nome: "Faixa Jade",
         chutes: [
-            { titulo: "1 - Chute em curva", videoId: "1G8TiRtZ-DPSGSk3sgq0v3K2wWmKA11Ck" },
-            { titulo: "2 - Chute em curva (pé da frente)", videoId: "17Oa-xxPRpm6oUP-YpA5efQz38GUT5FIO" },
-            { titulo: "3 - Wah soh toi (gancho)", videoId: "1biJiqIeoELezUrpRu4yKWCyoEitpodIz" },
-            { titulo: "4 - Jaat hay wah soh toi (sobrepasso gancho)", videoId: "1M_KHCseR8MqGSwPOLYHZgCJC2apr_4-z" },
-            { titulo: "5 - Juen sun chang toi (faca do pé pelas costas)", videoId: "1po2mg--RZyi0o3e8_rbd0JNVIUiHzM93" },
-            { titulo: "6 - Passo juen sun chang toi (passo faca do pé pelas costas)", videoId: "1taKXTR-f-gMI1VYh79JY7hlVMapInpTC" }
+            { num: "01", cantones: "Chute em curva", portugues: "", videoId: "1G8TiRtZ-DPSGSk3sgq0v3K2wWmKA11Ck" },
+            { num: "02", cantones: "Chute em curva", portugues: "pé da frente", videoId: "17Oa-xxPRpm6oUP-YpA5efQz38GUT5FIO" },
+            { num: "03", cantones: "Wah soh toi", portugues: "gancho", videoId: "1biJiqIeoELezUrpRu4yKWCyoEitpodIz" },
+            { num: "04", cantones: "Jaat hay wah soh toi", portugues: "sobrepasso gancho", videoId: "1M_KHCseR8MqGSwPOLYHZgCJC2apr_4-z" },
+            { num: "05", cantones: "Juen sun chang toi", portugues: "faca do pé pelas costas", videoId: "1po2mg--RZyi0o3e8_rbd0JNVIUiHzM93" },
+            { num: "06", cantones: "Passo juen sun chang toi", portugues: "passo faca do pé pelas costas", videoId: "1taKXTR-f-gMI1VYh79JY7hlVMapInpTC" }
         ],
         basicos: [
-            { titulo: "1 - Mahn Kwun", videoId: "1q1vTqeZg5a3Ui-zC0DxzRLMysgdxX2PK" },
-            { titulo: "2 - Liu Kwun", videoId: "1VUv88lpRTTw-rn3hYzWogbu_c1HS-sl3" },
-            { titulo: "3 - Pah Kwun - Lah kwun", videoId: "1oaXMNbVxNgIxD-bWn6qJYqLrH5_giZi-" },
-            { titulo: "4 - Low soi kwun", videoId: "1sBhP-tsrbt0bUEAn49a6x-lJo8PPl7wJ" },
-            { titulo: "5 - How kwun", videoId: "1rd_E4istjrsanbXCjEjiiyMK9K7UKmoF" },
-            { titulo: "6 - Da kwun", videoId: "1oBw02HoZZqJgLVP-4kTPtnEnOW_xkyG7" },
-            { titulo: "7 - Jeet Kwun", videoId: "1A3oNa2Gxc6htJ7WuLaBlzgRtzGtG-n6s" },
-            { titulo: "8 - Wang da kwun", videoId: "1BpVfdAUjFQkZYh3Fhkb7Cg8IK5zrUER7" },
-            { titulo: "9 - Ping Kwun", videoId: "1JbcuXyrGVEpMGG6fcO2AlnTVAekkstiG" },
-            { titulo: "10 - So ho kwun", videoId: "1GhpQTyGsuU01A7oTZSr0UVlwC5m0vT36" }
+            { num: "01", cantones: "Mahn Kwun", videoId: "1q1vTqeZg5a3Ui-zC0DxzRLMysgdxX2PK" },
+            { num: "02", cantones: "Liu Kwun", videoId: "1VUv88lpRTTw-rn3hYzWogbu_c1HS-sl3" },
+            { num: "03", cantones: "Pah Kwun - Lah kwun", videoId: "1oaXMNbVxNgIxD-bWn6qJYqLrH5_giZi-" },
+            { num: "04", cantones: "Low soi kwun", videoId: "1sBhP-tsrbt0bUEAn49a6x-lJo8PPl7wJ" },
+            { num: "05", cantones: "How kwun", videoId: "1rd_E4istjrsanbXCjEjiiyMK9K7UKmoF" },
+            { num: "06", cantones: "Da kwun", videoId: "1oBw02HoZZqJgLVP-4kTPtnEnOW_xkyG7" },
+            { num: "07", cantones: "Jeet Kwun", videoId: "1A3oNa2Gxc6htJ7WuLaBlzgRtzGtG-n6s" },
+            { num: "08", cantones: "Wang da kwun", videoId: "1BpVfdAUjFQkZYh3Fhkb7Cg8IK5zrUER7" },
+            { num: "09", cantones: "Ping Kwun", videoId: "1JbcuXyrGVEpMGG6fcO2AlnTVAekkstiG" },
+            { num: "10", cantones: "So ho kwun", videoId: "1GhpQTyGsuU01A7oTZSr0UVlwC5m0vT36" }
         ],
         basicos_complementares: [
-            { titulo: "1 - Low soi kwun - da kwun - jeet kwun", videoId: "1oU5TBuw8_JBdFDj2Z_fcCbIJ3rJERZnX" },
-            { titulo: "2 - Mahn kwun - low ma - tic kwun", videoId: "1CcTwoeEhAVElJNW1OPn2BQLNH-IGAJet" },
-            { titulo: "3 - Pah kwun - lap kwun - so ho kwun", videoId: "1e5-zeV92SgY4--gMRp-opYbpy8DMeNt2" }
+            { num: "01", cantones: "Low soi kwun - da kwun - jeet kwun", videoId: "1oU5TBuw8_JBdFDj2Z_fcCbIJ3rJERZnX" },
+            { num: "02", cantones: "Mahn kwun - low ma - tic kwun", videoId: "1CcTwoeEhAVElJNW1OPn2BQLNH-IGAJet" },
+            { num: "03", cantones: "Pah kwun - lap kwun - so ho kwun", videoId: "1e5-zeV92SgY4--gMRp-opYbpy8DMeNt2" }
         ],
         taolus: [
-            { titulo: "Sil Lum Kwun (Bastão Shaolin)", videoId: "1eY_KQRSd2-b-O5devzeWr_m0peofLX3L" }
+            { cantones: "Sil Lum Kwun", portugues: "Bastão Shaolin", videoId: "1eY_KQRSd2-b-O5devzeWr_m0peofLX3L" }
         ]
     },
     verde: {
         nome: "Faixa Verde",
         chutes: [
-            { titulo: "1 - Dan Toi (Frontal empurrando)", videoId: "1NliPEC6svW6ELPr6K4W5q-iq3Q33HiVg" },
-            { titulo: "2 - Baan toi + Chang toi (peito do pé + faca do pé com a mesma perna)", videoId: "1ChlxLWr0NcYC-Dg91Mfh9xRsOFFfq86z" },
-            { titulo: "3 - Soh girk (rasteira frontal)", videoId: "1k1S286wF0CQjEkGKk4ptImONkMSR0GuA" },
-            { titulo: "4 - Baan toi juen sun (360º peito do pé)", videoId: "1309FGMq0aUM8GPa66zNbP_Zy1HmVaQj2" },
-            { titulo: "5 - Juen sun wang soh toi (reverso)", videoId: "1ng6JIYbs0vkxGdm62q3s3ZMmHdAB8hDl" },
-            { titulo: "6 - Passo juen sun wang soh toi (passo + reverso)", videoId: "1LtUqQtnRKKDoKnz_vKARIQ6uIUYDkm80" }
+            { num: "01", cantones: "Dan Toi", portugues: "Frontal empurrando", videoId: "1NliPEC6svW6ELPr6K4W5q-iq3Q33HiVg" },
+            { num: "02", cantones: "Baan toi + Chang toi", portugues: "peito do pé + faca do pé com a mesma perna", videoId: "1ChlxLWr0NcYC-Dg91Mfh9xRsOFFfq86z" },
+            { num: "03", cantones: "Soh girk", portugues: "rasteira frontal", videoId: "1k1S286wF0CQjEkGKk4ptImONkMSR0GuA" },
+            { num: "04", cantones: "Baan toi juen sun", portugues: "360º peito do pé", videoId: "1309FGMq0aUM8GPa66zNbP_Zy1HmVaQj2" },
+            { num: "05", cantones: "Juen sun wang soh toi", portugues: "reverso", videoId: "1ng6JIYbs0vkxGdm62q3s3ZMmHdAB8hDl" },
+            { num: "06", cantones: "Passo juen sun wang soh toi", portugues: "passo + reverso", videoId: "1LtUqQtnRKKDoKnz_vKARIQ6uIUYDkm80" }
         ],
         basicos: [
-            { titulo: "1 - Jaat haay - Chong fu", videoId: "1SSy5MPuuCzU4RZ4OIZjp6XTWtaFQuBQb" },
-            { titulo: "2 - Chin lah - yum chop choy- tek girk - po choy", videoId: "1D0t91NpD-mhQA1UXLQmECqpBtnLlicfY" },
-            { titulo: "3 - Chin lah - sern poon kue - soh girk", videoId: "1O-lcE0EheLqepv_VQZV6a04_9VNhQu0U" },
-            { titulo: "4 - Gwa choy - gong jern - pie jahng - loon kue", videoId: "1l4OqnOumQkRU_bfPeciJFC2yf14889fS" },
-            { titulo: "5 - Gong jern (3x) - fahn jong choy", videoId: "1YqFGFzJTBknrp2MZbPVKKguSBA8lOzYm" },
-            { titulo: "6 - Fahn jong choy - poon kue - kwan sao", videoId: "1pFmXZzJAhjht16xFO-r0IR7rYa7kCQFJ" }
+            { num: "01", cantones: "Jaat haay - Chong fu", videoId: "1SSy5MPuuCzU4RZ4OIZjp6XTWtaFQuBQb" },
+            { num: "02", cantones: "Chin lah - yum chop choy- tek girk - po choy", videoId: "1D0t91NpD-mhQA1UXLQmECqpBtnLlicfY" },
+            { num: "03", cantones: "Chin lah - sern poon kue - soh girk", videoId: "1O-lcE0EheLqepv_VQZV6a04_9VNhQu0U" },
+            { num: "04", cantones: "Gwa choy - gong jern - pie jahng - loon kue", videoId: "1l4OqnOumQkRU_bfPeciJFC2yf14889fS" },
+            { num: "05", cantones: "Gong jern (3x) - fahn jong choy", videoId: "1YqFGFzJTBknrp2MZbPVKKguSBA8lOzYm" },
+            { num: "06", cantones: "Fahn jong choy - poon kue - kwan sao", videoId: "1pFmXZzJAhjht16xFO-r0IR7rYa7kCQFJ" }
         ],
         taolus: [
-            { titulo: "Siu Mui Fah Kyun", videoId: "17-poxSYGw3W6tiTBJ0KGcnYnVCENW6D2" }
+            { cantones: "Siu Mui Fah Kyun", videoId: "17-poxSYGw3W6tiTBJ0KGcnYnVCENW6D2" }
         ]
     },
     roxa: {
         nome: "Faixa Roxa",
         chutes: [
-            { titulo: "1 - Hou sou toi (rasteira 360º por trás)", videoId: "1gtmee8lApfPfXhxk18vbKI33MWdFOKjR" },
-            { titulo: "2 - Baan toi + Juen sun chang toi (peito do pé + faca do pé pelas costas)", videoId: "12QsgbyAv9iB5v_xZJy1VgD79Dsu4xZhN" },
-            { titulo: "3 - Passo jaat hay dan toi", videoId: "1Gua-B42q8esr8oPaaYiqGYtOh4FLpcEd" },
-            { titulo: "4 - Passo jaat hay baan toi", videoId: "1nsrurWWBYBl4HxLPgRd5iPryXRTmdYQP" },
-            { titulo: "5 - Passo jaat hay chang toi", videoId: "1uO5WT8tA_Cy-tcFSfCHuVFh2-5elgZDv" }
+            { num: "01", cantones: "Hou sou toi", portugues: "rasteira 360º por trás", videoId: "1gtmee8lApfPfXhxk18vbKI33MWdFOKjR" },
+            { num: "02", cantones: "Baan toi + Juen sun chang toi", portugues: "peito do pé + faca do pé pelas costas", videoId: "12QsgbyAv9iB5v_xZJy1VgD79Dsu4xZhN" },
+            { num: "03", cantones: "Passo jaat hay dan toi", videoId: "1Gua-B42q8esr8oPaaYiqGYtOh4FLpcEd" },
+            { num: "04", cantones: "Passo jaat hay baan toi", videoId: "1nsrurWWBYBl4HxLPgRd5iPryXRTmdYQP" },
+            { num: "05", cantones: "Passo jaat hay chang toi", videoId: "1uO5WT8tA_Cy-tcFSfCHuVFh2-5elgZDv" }
         ],
         basicos: [
-            { titulo: "1º Básico", videoId: "1cF8m0Goi-QnWNPoIhaix8JprWmgrGZbz" },
-            { titulo: "2º Básico", videoId: "1YFzDYpfAMeCRekphbhejXTvQWqTBMcfe" },
-            { titulo: "3º Básico", videoId: "1TY0uhKUJMYKjDNSNplU2zwiSZ3NbgalW" },
-            { titulo: "4º Básico", videoId: "1bku9_Zm1gkX9Nr738hCGs9Q4SlpB7gpt" },
-            { titulo: "5º Básico", videoId: "1OvnGwOjdfuPw2jXhohQVCrPuIXXGzXiU" }
+            { num: "01", cantones: "Básico", videoId: "1cF8m0Goi-QnWNPoIhaix8JprWmgrGZbz" },
+            { num: "02", cantones: "Básico", videoId: "1YFzDYpfAMeCRekphbhejXTvQWqTBMcfe" },
+            { num: "03", cantones: "Básico", videoId: "1TY0uhKUJMYKjDNSNplU2zwiSZ3NbgalW" },
+            { num: "04", cantones: "Básico", videoId: "1bku9_Zm1gkX9Nr738hCGs9Q4SlpB7gpt" },
+            { num: "05", cantones: "Básico", videoId: "1OvnGwOjdfuPw2jXhohQVCrPuIXXGzXiU" }
         ],
         taolus: [
-            { titulo: "Mui Fah Bin Gwai Kwun", videoId: "1bAmoJcsTlAjbIy7rc4HBgKoqgs_V8crV" },
-            { titulo: "Ng Lun Ma", videoId: "10g66RWyygomS_-_NcKvoJoCOwf-VRFma" }
+            { cantones: "Mui Fah Bin Gwai Kwun", videoId: "1bAmoJcsTlAjbIy7rc4HBgKoqgs_V8crV" },
+            { cantones: "Ng Lun Ma", videoId: "10g66RWyygomS_-_NcKvoJoCOwf-VRFma" }
         ]
     },
     vermelha: {
         nome: "Faixa Vermelha",
         chutes: [
-            { titulo: "1º Passo Chute em Curva Saltando", videoId: "1JiqTp1f4YVI4vFAZslUhplbmkaK4uBdw" },
-            { titulo: "2º Furacão Batendo na Mão", videoId: "1bVRsXGO7KOBvQh3jGPgLe8sWIFrwJXx6" },
-            { titulo: "3º Furacão com Peito do Pé", videoId: "1zJ3uFzMZBBmysoNBQjTu5Min__7qtgZ3" },
-            { titulo: "4º Facada do Pé por Trás Saltando", videoId: "1sl4oSMCPeB9jS_33cSdR3arxY17Vjfs7" },
-            { titulo: "5º Passo Facada do Pé por Trás Saltando", videoId: "1UoRwu4t37UzlXIq1ACICLOOwCC3Ji0NS" }
+            { num: "01", cantones: "Passo Chute em Curva Saltando", videoId: "1JiqTp1f4YVI4vFAZslUhplbmkaK4uBdw" },
+            { num: "02", cantones: "Furacão Batendo na Mão", videoId: "1bVRsXGO7KOBvQh3jGPgLe8sWIFrwJXx6" },
+            { num: "03", cantones: "Furacão com Peito do Pé", videoId: "1zJ3uFzMZBBmysoNBQjTu5Min__7qtgZ3" },
+            { num: "04", cantones: "Facada do Pé por Trás Saltando", videoId: "1sl4oSMCPeB9jS_33cSdR3arxY17Vjfs7" },
+            { num: "05", cantones: "Passo Facada do Pé por Trás Saltando", videoId: "1UoRwu4t37UzlXIq1ACICLOOwCC3Ji0NS" }
         ],
         basicos: [
-            { titulo: "1º Básico (Outro Ângulo)", videoId: "1PJkZiDZC659gzFF8tKiD7NjCK-zIpPF0" },
-            { titulo: "1º Básico", videoId: "1xuTPVEXm5J2_WtFb_KY-rGWTzCkhMU0r" },
-            { titulo: "2º Básico", videoId: "1ibHjZmIL6dPMTeVdMRx2qbYieOlXsV1L" },
-            { titulo: "3º Básico", videoId: "1KIES1Zl2HXya3yNX-ziJhnkTVyC9VDKG" },
-            { titulo: "4º Básico", videoId: "19l_pVAZI_W7l4boe0C7Rh_88eGBi7YfW" },
-            { titulo: "5º Básico", videoId: "1eQYJYkCtfBU1w2Qfyan1bOuSZgONGrGH" }
+            { num: "01", cantones: "Básico (Outro Ângulo)", videoId: "1PJkZiDZC659gzFF8tKiD7NjCK-zIpPF0" },
+            { num: "01", cantones: "Básico", videoId: "1xuTPVEXm5J2_WtFb_KY-rGWTzCkhMU0r" },
+            { num: "02", cantones: "Básico", videoId: "1ibHjZmIL6dPMTeVdMRx2qbYieOlXsV1L" },
+            { num: "03", cantones: "Básico", videoId: "1KIES1Zl2HXya3yNX-ziJhnkTVyC9VDKG" },
+            { num: "04", cantones: "Básico", videoId: "19l_pVAZI_W7l4boe0C7Rh_88eGBi7YfW" },
+            { num: "05", cantones: "Básico", videoId: "1eQYJYkCtfBU1w2Qfyan1bOuSZgONGrGH" }
         ],
         taolus: [
-            { titulo: "Ching Jong", videoId: "1QbB2gZQ-PuJQFhkpASY_JIacBwaM8UZc" },
-            { titulo: "Tut Tsen Kyun", videoId: "1CgYit_gKECt0xXOERqZ6NKpe_3YG0i2d" }
+            { cantones: "Ching Jong", videoId: "1QbB2gZQ-PuJQFhkpASY_JIacBwaM8UZc" },
+            { cantones: "Tut Tsen Kyun", videoId: "1CgYit_gKECt0xXOERqZ6NKpe_3YG0i2d" }
         ]
     },
     marrom_claro: { nome: "Faixa Marrom Claro", chutes: [], basicos: [], taolus: [] },
@@ -196,16 +217,27 @@ const catalogo = {
     preta: { nome: "Faixa Preta", chutes: [], basicos: [], taolus: [] }
 };
 
-const app = document.getElementById("app");
+// Elementos da Interface
+const viewHome = document.getElementById("view-home");
+const viewFaixa = document.getElementById("view-faixa"); // Container da faixa
+const videoModal = document.getElementById("video-modal");
+const videoIframe = document.getElementById("video-iframe");
+const modalTitle = document.getElementById("modal-title");
 
-function home() {
-    app.innerHTML = `
+// Inicialização: Renderiza a Home estática
+function init() {
+    renderHome();
+}
+
+function renderHome() {
+    viewHome.innerHTML = `
     <div class="grid">
       ${Object.keys(catalogo).map(id => {
         const f = catalogo[id];
         const temVideo = f.chutes.length > 0 || f.basicos.length > 0 || f.taolus.length > 0;
         const classe = temVideo ? `card faixa-${id}` : `card disabled faixa-${id}`;
-        const clique = temVideo ? `onclick="faixa('${id}')"` : "";
+        // Agora chamamos showFaixa em vez de recarregar tudo
+        const clique = temVideo ? `onclick="showFaixa('${id}')"` : "";
         return `<div class="${classe}" ${clique}>
                   <div class="card-content">${f.nome}</div>
                 </div>`;
@@ -214,20 +246,38 @@ function home() {
   `;
 }
 
-function faixa(id) {
+// Navegação: Mostra Tela da Faixa (esconde Home)
+function showFaixa(id) {
     const f = catalogo[id];
-    app.innerHTML = `
-    <div class="back" onclick="home()">← Voltar</div>
+
+    // Renderiza o conteúdo da faixa dinamicamente no container #view-faixa
+    viewFaixa.innerHTML = `
+    <div class="back" onclick="closeFaixa()">← Voltar</div>
     <h2>${f.nome}</h2>
 
-    ${categoria("Chutes", f.chutes, id)}
-    ${categoria("Básicos", f.basicos, id)}
-    ${f.basicos_complementares ? categoria("Básicos Complementares", f.basicos_complementares, id) : ""}
-    ${categoria("Taolu´s", f.taolus, id)}
+    ${categoria("Chutes", f.chutes)}
+    ${categoria("Básicos", f.basicos)}
+    ${f.basicos_complementares ? categoria("Básicos Complementares", f.basicos_complementares) : ""}
+    ${categoria("Taolu´s", f.taolus)}
   `;
+
+    // Troca de Visibilidade
+    viewHome.classList.add("hidden");
+    viewFaixa.classList.remove("hidden");
+
+    // Rola para o topo da faixa (opcional, mas bom pra UX ao entrar)
+    window.scrollTo(0, 0);
 }
 
-function categoria(nome, videos, faixaId) {
+// Navegação: Volta para Home (esconde Faixa)
+function closeFaixa() {
+    viewFaixa.classList.add("hidden");
+    viewHome.classList.remove("hidden");
+    // Não precisa rolar, o browser lembra a posição da Home
+}
+
+
+function categoria(nome, videos) {
     if (!videos || videos.length === 0) {
         return `
       <div class="section">
@@ -236,36 +286,105 @@ function categoria(nome, videos, faixaId) {
       </div>
     `;
     }
+    // onclick agora chama openPlayer
     return `
     <div class="section">
       <h3>${nome}</h3>
       <div class="row">
-        ${videos.map(v =>
-        `<div class="video-card" onclick="player('${v.videoId}','${v.titulo}', '${faixaId}')">
-            <strong>${v.titulo}</strong>
-          </div>`
-    ).join("")}
+        ${videos.map(v => {
+        // Lógica Híbrida: Suporta formato antigo (titulo) e novo (cantones + portugues)
+        let displayTitle = "";
+        let textToSpeak = "";
+
+        if (v.cantones) {
+            // Novo formato
+            const numPrefix = v.num ? `${v.num} - ` : "";
+            const ptSuffix = v.portugues ? `<br><small style="font-weight:normal; opacity:0.8">${v.portugues}</small>` : "";
+            displayTitle = `${numPrefix}${v.cantones}${ptSuffix}`;
+            textToSpeak = v.cantones;
+        } else {
+            // Formato antigo
+            displayTitle = v.titulo;
+            textToSpeak = limparTextoParaFala(v.titulo);
+        }
+
+        // Título puro para o modal (sem HTML)
+        const modalTitleRaw = v.cantones
+            ? `${v.num ? v.num + " - " : ""}${v.cantones} ${v.portugues ? " (" + v.portugues + ")" : ""}`
+            : v.titulo;
+
+        return `<div class="video-card" onclick="openPlayer('${v.videoId}','${modalTitleRaw}')">
+            <strong>${displayTitle}</strong>
+            <button class="btn-audio" onclick="event.stopPropagation(); falarCantonese('${textToSpeak}')" title="Ouvir Pronúncia">
+               🔊
+            </button>
+          </div>`;
+    }).join("")}
       </div>
     </div>
   `;
 }
 
-function player(id, titulo, faixaId) {
-    app.innerHTML = `
-    <div class="back" onclick="faixa('${faixaId}')">← Voltar</div>
-    <h2>${titulo}</h2>
+// Player: Abre Modal (Overlay)
+function openPlayer(id, titulo) {
+    modalTitle.textContent = titulo;
+    videoIframe.src = `https://drive.google.com/file/d/${id}/preview`;
 
-    <div class="player">
-      <iframe
-        src="https://drive.google.com/file/d/${id}/preview"
-        allow="autoplay; fullscreen"
-        allowfullscreen>
-      </iframe>
-    </div>
-  `;
+    videoModal.classList.remove("hidden");
 }
 
-if (app) home();
+// Player: Fecha Modal
+function closePlayer() {
+    videoModal.classList.add("hidden");
+    videoIframe.src = ""; // Para o vídeo
+}
+
+// --- Lógica de Pronúncia (TTS) ---
+
+function limparTextoParaFala(titulo) {
+    // 1. Remove numeração inicial (ex: "01 - ")
+    let texto = titulo.replace(/^\d+\s*-\s*/, "");
+
+    // 2. Remove conteúdo entre parênteses e o próprio parênteses (ex: "(Frontal...)")
+    texto = texto.replace(/\s*\(.*?\)/g, "");
+
+    // 3. Remove traços extras que possam ter sobrado
+    texto = texto.replace(/\s*-\s*/g, " ");
+
+    return texto.trim();
+}
+
+function falarCantonese(texto) {
+    if (!('speechSynthesis' in window)) {
+        alert("Seu navegador não suporta áudio.");
+        return;
+    }
+
+    // Cancela áudio anterior
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(texto);
+
+    // Tenta encontrar voz de Hong Kong (yue-HK ou zh-HK)
+    const voices = window.speechSynthesis.getVoices();
+    // Prioridade: Cantonês (yue) > Chinês Hong Kong (zh-HK) > Chinês Tradicional (zh-TW)
+    const cantoneseVoice = voices.find(v => v.lang === "yue-HK" || v.lang === "zh-HK" || v.lang === "zh-TW");
+
+    if (cantoneseVoice) {
+        utterance.voice = cantoneseVoice;
+        utterance.lang = cantoneseVoice.lang;
+        utterance.rate = 0.9; // Um pouco mais lento para clareza
+    } else {
+        // Fallback genérico (pode sair em Mandarim dependendo do OS, mas é o melhor possível)
+        console.warn("Voz Cantonês não encontrada. Tentando zh-CN ou padrão.");
+        utterance.lang = "zh-CN";
+    }
+
+    window.speechSynthesis.speak(utterance);
+}
+
+// Inicia aplicação
+if (viewHome) init();
 
 // Lógica do Tema
 const themeBtn = document.getElementById("theme-btn");

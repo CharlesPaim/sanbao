@@ -17,7 +17,28 @@
     <h2>Conteúdo por Faixa</h2>
   </header>
 
-  <main id="app"></main>
+  <main id="app">
+    <!-- View: Home (Lista de Faixas) -->
+    <div id="view-home"></div>
+
+    <!-- View: Faixa Detalhes -->
+    <div id="view-faixa" class="hidden">
+      <!-- Conteúdo injetado via JS -->
+    </div>
+  </main>
+
+  <!-- Modal View: Player -->
+  <div id="video-modal" class="hidden">
+    <div class="modal-header">
+      <h3 id="modal-title" style="margin:0; color:white;">Título do Vídeo</h3>
+      <button class="close-btn" onclick="closePlayer()">×</button>
+    </div>
+    <div class="modal-content">
+      <div class="player-wrapper">
+        <iframe id="video-iframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
   <footer>
     © San Bao Flix — Kung Fu Choy Lay Fut
