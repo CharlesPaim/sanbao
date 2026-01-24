@@ -68,12 +68,12 @@ const catalogo = {
         ],
         basicos: [
             { num: "01", cantones: "Fu Jow", videoId: "1IiPlyJPJdvRIM16roaNJPt3Yqc1bDhm0" },
-            { num: "02", cantones: "Choy Lahp", videoId: "1iQzBN5Pno0g7Abfc_stYCHlILSDZBEr7" },
-            { num: "03", cantones: "Yum Jern", videoId: "1-kj_bmJPNQqJNBQkGIAi-r02Y1p90rPO" },
-            { num: "04", cantones: "Fahn Jong Choy", videoId: "1S4vZc8ih5npmWvU91Pr1qnYPhWDoRSoL" },
+            { num: "02", cantones: "Choy Lahp", videoId: "1RFutwHDYtv4TevCHaNVMix39rPVmA_IP" },
+            { num: "03", cantones: "Yum Jern", videoId: "1Y6eFtGhr7A17TeFEOmPGAkUXJpXIhLFO" },
+            { num: "04", cantones: "Fahn Jong Choy", videoId: "1_Ustox4czjPmtvXimba_ogzNtgGBGI3q" },
             { num: "05", cantones: "Cup Choy", videoId: "1Dq0GLfezPz03fWr5CHqUhKlxYZaU0jpw" },
-            { num: "06", cantones: "Poon Kue Sow Choy", videoId: "1gPnAHTkqkHZtdZsq-Wtifob6e8FPRTaR" },
-            { num: "07", cantones: "Gwa Choy Cum Jern", videoId: "1mlk-d7zCgKpJqMRnp5neak6P4VFOW3s3" },
+            { num: "06", cantones: "Poon Kue Sow Choy", videoId: "1ff6Xc7_OtSu50yjvTae--J9QXsiaxGMP" },
+            { num: "07", cantones: "Gwa Choy Cum Jern", videoId: "1l2sjKLPsrEhYJyiPEu5NNKoJeM21BFrl" },
             { num: "08", cantones: "Gwa Choy Pow Choy", videoId: "1bILRi5dZfjydi3_y7L8BZPk0yB8W3pqh" },
             { num: "09", cantones: "Been Choy", videoId: "1pm4MfsR0eL4Gv2eNNiN-c05YBKMN5UDB" },
             { num: "10", cantones: "Loong Kue", videoId: "1b6SbRLDRHx-fRxmn1Mr-N3RmSq0chylN" }
