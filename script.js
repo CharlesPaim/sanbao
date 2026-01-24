@@ -412,50 +412,37 @@ function speak(texto, langCode, onEndCallback) {
     if (!('speechSynthesis' in window)) return;
 
     const synth = window.speechSynthesis;
-
-    // Força o cancelamento de qualquer fala anterior
     synth.cancel();
 
-    // Se as vozes ainda não carregaram, as APIs as carregam de forma assíncrona
-    if (synth.getVoices().length === 0) {
-        synth.onvoiceschanged = () => speak(texto, langCode, onEndCallback);
-        return;
-    }
-
     const utterance = new SpeechSynthesisUtterance(texto);
-    const voices = synth.getVoices();
-
-    // Lógica robusta para encontrar a voz certa
-    let voice = null;
-    if (langCode === "yue-HK") {
-        // Tenta encontrar Cantonês (Hong Kong)
-        voice = voices.find(v => v.lang === "yue-HK" || v.lang === "zh-HK" || v.lang.includes("Cantonese"));
-        // Se não achar, tenta qualquer chinês como fallback
-        if (!voice) voice = voices.find(v => v.lang.startsWith("zh"));
-    } else if (langCode === "pt-BR") {
-        // Tenta encontrar Português Brasil
-        voice = voices.find(v => v.lang === "pt-BR" || v.lang === "pt_BR");
-        // Se não achar, tenta qualquer português
-        if (!voice) voice = voices.find(v => v.lang.startsWith("pt"));
-    }
-
-    if (voice) {
-        utterance.voice = voice;
-        utterance.lang = voice.lang;
-    } else {
-        utterance.lang = langCode;
-    }
-
+    utterance.lang = langCode;
     utterance.rate = 0.9;
+
     if (onEndCallback) utterance.onend = onEndCallback;
+
+    // Tenta encontrar a voz adequada se já estiverem carregadas
+    const voices = synth.getVoices();
+    if (voices.length > 0) {
+        let voice = null;
+        if (langCode === "yue-HK") {
+            voice = voices.find(v => v.lang === "yue-HK" || v.lang === "zh-HK" || v.lang.includes("Cantonese"));
+        } else if (langCode === "pt-BR") {
+            voice = voices.find(v => v.lang === "pt-BR" || v.lang === "pt_BR");
+        }
+        if (voice) utterance.voice = voice;
+    }
 
     synth.speak(utterance);
 }
 
-// "Acorda" a API de vozes no carregamento da página
-if ('speechSynthesis' in window) {
-    window.speechSynthesis.getVoices();
+// "Acorda" a API de vozes em dispositivos móveis na primeira interação
+function initVoices() {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.getVoices();
+    }
 }
+document.addEventListener('touchstart', initVoices, { once: true });
+document.addEventListener('click', initVoices, { once: true });
 
 // Inicia aplicação
 if (viewHome) init();
