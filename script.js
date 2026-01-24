@@ -22,8 +22,8 @@ const catalogo = {
             { num: "10", cantones: "Biu Jong Choy", portugues: "", videoId: "12Vn0zbvdwahrbu2U8s20GerVndyV3luE" }
         ],
         taolus: [
-            { cantones: "Gay Boon Kyun Yet", portugues: "Forma básica de mão n. 1", videoId: "1i1ZwBExFmTEkZUykKi_ROAPkp9QIytbE" },
-            { cantones: "Gay Boon Ma Bo Yet", portugues: "Forma básica de postura n. 1", videoId: "1OMU85v-Rpufn-jrll8zP4IX2F-qAI4Jy" }
+            { cantones: "Gay Boon Kyun Yet", portugues: "Forma básica de mão número 1", videoId: "1i1ZwBExFmTEkZUykKi_ROAPkp9QIytbE" },
+            { cantones: "Gay Boon Ma Bo Yet", portugues: "Forma básica de postura número 1", videoId: "1OMU85v-Rpufn-jrll8zP4IX2F-qAI4Jy" }
         ]
     },
     amarela: {
@@ -113,7 +113,8 @@ const catalogo = {
         taolus: [
             { cantones: "Ng Lun Kyun (Var. 1)", videoId: "1oroM0dj3xkVEuY65MPQjD-LL172D-5Jj" },
             { cantones: "Ng Lun Kyun (Var. 2)", videoId: "1cTvDuLAnRQLglfEm-iL1rBBXN-gbOqUx" },
-            { cantones: "Ng Lun Kyun (Var. 3)", videoId: "14eVCJqj_wdKHXbzMUs9J4XnK7xRrd7Ar" }
+            { cantones: "Ng Lun Kyun (Var. 3)", videoId: "14eVCJqj_wdKHXbzMUs9J4XnK7xRrd7Ar" },
+            { cantones: "Gay Boon Kyun Saam", portugues: "Forma básica de mão número 3", videoId: "1vKMxFs5s3KJtscvkYLDw7dvZSnT2Fw9c" }
         ]
     },
     jade: {
@@ -223,6 +224,11 @@ const viewFaixa = document.getElementById("view-faixa"); // Container da faixa
 const videoModal = document.getElementById("video-modal");
 const videoIframe = document.getElementById("video-iframe");
 const modalTitle = document.getElementById("modal-title");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+
+let currentPlaylist = [];
+let currentIndex = 0;
 
 // Inicialização: Renderiza a Home estática
 function init() {
@@ -255,10 +261,10 @@ function showFaixa(id) {
     <div class="back" onclick="closeFaixa()">← Voltar</div>
     <h2>${f.nome}</h2>
 
-    ${categoria("Chutes", f.chutes)}
-    ${categoria("Básicos", f.basicos)}
-    ${f.basicos_complementares ? categoria("Básicos Complementares", f.basicos_complementares) : ""}
-    ${categoria("Taolu´s", f.taolus)}
+    ${categoria("Chutes", f.chutes, id, 'chutes')}
+    ${categoria("Básicos", f.basicos, id, 'basicos')}
+    ${f.basicos_complementares ? categoria("Básicos Complementares", f.basicos_complementares, id, 'basicos_complementares') : ""}
+    ${categoria("Taolu´s", f.taolus, id, 'taolus')}
   `;
 
     // Troca de Visibilidade
@@ -277,7 +283,7 @@ function closeFaixa() {
 }
 
 
-function categoria(nome, videos) {
+function categoria(nome, videos, faixaId, catKey) {
     if (!videos || videos.length === 0) {
         return `
       <div class="section">
@@ -286,38 +292,33 @@ function categoria(nome, videos) {
       </div>
     `;
     }
-    // onclick agora chama openPlayer
+
     return `
     <div class="section">
       <h3>${nome}</h3>
       <div class="row">
-        ${videos.map(v => {
+        ${videos.map((v, index) => {
         // Lógica Híbrida: Suporta formato antigo (titulo) e novo (cantones + portugues)
         let displayTitle = "";
         let textToSpeak = "";
 
         if (v.cantones) {
-            // Novo formato
             const numPrefix = v.num ? `${v.num} - ` : "";
             const ptSuffix = v.portugues ? `<br><small style="font-weight:normal; opacity:0.8">${v.portugues}</small>` : "";
             displayTitle = `${numPrefix}${v.cantones}${ptSuffix}`;
             textToSpeak = v.cantones;
         } else {
-            // Formato antigo
             displayTitle = v.titulo;
             textToSpeak = limparTextoParaFala(v.titulo);
         }
 
-        // Título puro para o modal (sem HTML)
-        const modalTitleRaw = v.cantones
-            ? `${v.num ? v.num + " - " : ""}${v.cantones} ${v.portugues ? " (" + v.portugues + ")" : ""}`
-            : v.titulo;
-
-        return `<div class="video-card" onclick="openPlayer('${v.videoId}','${modalTitleRaw}')">
+        return `<div class="video-card" onclick="openPlayer('${faixaId}','${catKey}', ${index})">
             <strong>${displayTitle}</strong>
-            <button class="btn-audio" onclick="event.stopPropagation(); falarCantonese('${textToSpeak}')" title="Ouvir Pronúncia">
-               🔊
-            </button>
+            <div class="audio-controls">
+              <button class="btn-audio" onclick="event.stopPropagation(); falarBilingue('${v.cantones || ''}', '${v.portugues || ''}', '${catKey}', '${v.num || ''}')" title="Ouvir Pronúncia e Tradução">
+                 🔊
+              </button>
+            </div>
           </div>`;
     }).join("")}
       </div>
@@ -326,11 +327,33 @@ function categoria(nome, videos) {
 }
 
 // Player: Abre Modal (Overlay)
-function openPlayer(id, titulo) {
-    modalTitle.textContent = titulo;
-    videoIframe.src = `https://drive.google.com/file/d/${id}/preview`;
-
+function openPlayer(faixaId, catKey, index) {
+    currentPlaylist = catalogo[faixaId][catKey];
+    currentIndex = index;
+    updatePlayer();
     videoModal.classList.remove("hidden");
+}
+
+function updatePlayer() {
+    const video = currentPlaylist[currentIndex];
+    const modalTitleRaw = video.cantones
+        ? `${video.num ? video.num + " - " : ""}${video.cantones} ${video.portugues ? " (" + video.portugues + ")" : ""}`
+        : video.titulo;
+
+    modalTitle.textContent = modalTitleRaw;
+    videoIframe.src = `https://drive.google.com/file/d/${video.videoId}/preview`;
+
+    // Visibilidade dos botões
+    prevBtn.style.visibility = currentIndex > 0 ? "visible" : "hidden";
+    nextBtn.style.visibility = currentIndex < currentPlaylist.length - 1 ? "visible" : "hidden";
+}
+
+function changeVideo(delta) {
+    const newIndex = currentIndex + delta;
+    if (newIndex >= 0 && newIndex < currentPlaylist.length) {
+        currentIndex = newIndex;
+        updatePlayer();
+    }
 }
 
 // Player: Fecha Modal
@@ -354,33 +377,84 @@ function limparTextoParaFala(titulo) {
     return texto.trim();
 }
 
+function falarBilingue(cantones, portugues, catKey, num) {
+    let ptText = portugues;
+
+    // Se for categoria de básicos e tiver número, usa ordinal
+    if ((catKey === 'basicos' || catKey === 'basicos_complementares') && num) {
+        const ordinais = {
+            "01": "Primeiro", "02": "Segundo", "03": "Terceiro", "04": "Quarto", "05": "Quinto",
+            "06": "Sexto", "07": "Sétimo", "08": "Oitavo", "09": "Nono", "10": "Décimo"
+        };
+        const n = num.toString().padStart(2, '0');
+        if (ordinais[n]) {
+            ptText = `${ordinais[n]} Básico. ${portugues}`;
+        }
+    }
+
+    if (cantones && ptText) {
+        // Fala cantonês primeiro, depois português
+        speak(cantones, "yue-HK", () => {
+            setTimeout(() => speak(ptText, "pt-BR"), 500);
+        });
+    } else if (cantones) {
+        speak(cantones, "yue-HK");
+    } else if (ptText) {
+        speak(ptText, "pt-BR");
+    }
+}
+
 function falarCantonese(texto) {
-    if (!('speechSynthesis' in window)) {
-        alert("Seu navegador não suporta áudio.");
+    speak(texto, "yue-HK");
+}
+
+function speak(texto, langCode, onEndCallback) {
+    if (!('speechSynthesis' in window)) return;
+
+    const synth = window.speechSynthesis;
+
+    // Força o cancelamento de qualquer fala anterior
+    synth.cancel();
+
+    // Se as vozes ainda não carregaram, as APIs as carregam de forma assíncrona
+    if (synth.getVoices().length === 0) {
+        synth.onvoiceschanged = () => speak(texto, langCode, onEndCallback);
         return;
     }
 
-    // Cancela áudio anterior
-    window.speechSynthesis.cancel();
-
     const utterance = new SpeechSynthesisUtterance(texto);
+    const voices = synth.getVoices();
 
-    // Tenta encontrar voz de Hong Kong (yue-HK ou zh-HK)
-    const voices = window.speechSynthesis.getVoices();
-    // Prioridade: Cantonês (yue) > Chinês Hong Kong (zh-HK) > Chinês Tradicional (zh-TW)
-    const cantoneseVoice = voices.find(v => v.lang === "yue-HK" || v.lang === "zh-HK" || v.lang === "zh-TW");
-
-    if (cantoneseVoice) {
-        utterance.voice = cantoneseVoice;
-        utterance.lang = cantoneseVoice.lang;
-        utterance.rate = 0.9; // Um pouco mais lento para clareza
-    } else {
-        // Fallback genérico (pode sair em Mandarim dependendo do OS, mas é o melhor possível)
-        console.warn("Voz Cantonês não encontrada. Tentando zh-CN ou padrão.");
-        utterance.lang = "zh-CN";
+    // Lógica robusta para encontrar a voz certa
+    let voice = null;
+    if (langCode === "yue-HK") {
+        // Tenta encontrar Cantonês (Hong Kong)
+        voice = voices.find(v => v.lang === "yue-HK" || v.lang === "zh-HK" || v.lang.includes("Cantonese"));
+        // Se não achar, tenta qualquer chinês como fallback
+        if (!voice) voice = voices.find(v => v.lang.startsWith("zh"));
+    } else if (langCode === "pt-BR") {
+        // Tenta encontrar Português Brasil
+        voice = voices.find(v => v.lang === "pt-BR" || v.lang === "pt_BR");
+        // Se não achar, tenta qualquer português
+        if (!voice) voice = voices.find(v => v.lang.startsWith("pt"));
     }
 
-    window.speechSynthesis.speak(utterance);
+    if (voice) {
+        utterance.voice = voice;
+        utterance.lang = voice.lang;
+    } else {
+        utterance.lang = langCode;
+    }
+
+    utterance.rate = 0.9;
+    if (onEndCallback) utterance.onend = onEndCallback;
+
+    synth.speak(utterance);
+}
+
+// "Acorda" a API de vozes no carregamento da página
+if ('speechSynthesis' in window) {
+    window.speechSynthesis.getVoices();
 }
 
 // Inicia aplicação

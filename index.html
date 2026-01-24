@@ -34,9 +34,11 @@
       <button class="close-btn" onclick="closePlayer()">×</button>
     </div>
     <div class="modal-content">
+      <button id="prev-btn" class="nav-btn prev" onclick="changeVideo(-1)">❮</button>
       <div class="player-wrapper">
         <iframe id="video-iframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
+      <button id="next-btn" class="nav-btn next" onclick="changeVideo(1)">❯</button>
     </div>
   </div>
 
