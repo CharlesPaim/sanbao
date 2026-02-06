@@ -8,9 +8,11 @@ async function loadEquipamentos() {
         const { ordem_categorias, equipamentos } = data;
 
         let html = '';
+        const filter = container.getAttribute('data-filter');
+        const categoriasParaMostrar = filter ? [filter] : ordem_categorias;
 
         // Iterar pelas categorias na ordem definida
-        ordem_categorias.forEach(catNome => {
+        categoriasParaMostrar.forEach(catNome => {
             const equipamentosDaCategoria = equipamentos.filter(e => e.categoria === catNome);
 
             if (equipamentosDaCategoria.length > 0) {
