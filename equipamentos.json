@@ -37,86 +37,91 @@
         {
             "categoria": "Caneleira",
             "sub_categoria": "Primeiros Passos no Kung Fu",
-            "nome": "Olimpo Power X",
+            "nome": "Olimpo",
             "imagem": "images/caneleiras/Primeiros_Passos_Olimpo.jpg",
-            "link": "https://olimpoesportes.com.br/products/caneleira-muay-thai-power-x-profissional"
+            "link": [
+                "https://mercadolivre.com/sec/1m1MMjA",
+                "https://mercadolivre.com/sec/1iPohYR"
+            ]
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Primeiros Passos no Kung Fu",
-            "nome": "Everlast Prime",
+            "nome": "Everlast",
             "imagem": "images/caneleiras/Primeiros_Passos_Everlast.jpg",
-            "link": "https://amzn.to/4b1IyX4"
+            "link": "https://mercadolivre.com/sec/1mRJBCL"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Aprimorando a Técnica",
             "nome": "Mks Classic",
             "imagem": "images/caneleiras/Aprimorando_Tecnica_Mks_Classic.jpg",
-            "link": "https://www.mkscombat.com.br/acessorios/caneleira-muay-thai-kickboxing-mks-classic"
+            "link": "https://mercadolivre.com/sec/2FFeykw"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Pulser 20mm",
+            "nome": "Pulser",
             "imagem": "images/caneleiras/Aprimorando_Tecnica_Pulser.png",
-            "link": "https://www.pulserfight.com.br/caneleiras"
+            "link": "https://mercadolivre.com/sec/1B5oFLr"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Decathlon Outshock 500",
-            "imagem": "images/caneleiras/Aprimorando_Tecnica_Decathlon.png",
-            "link": "https://www.decathlon.com.br/caneleirasprotecoes-de-pes-de-boxe-e-muay-thai-adulto-500-preto-8751236-outshock/p"
-        },
-        {
-            "categoria": "Caneleira",
-            "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Spank Profissional",
-            "imagem": "images/caneleiras/Aprimorando_Tecnica_Spawk.jpg",
-            "link": "https://www.spank.com.br/protetores/caneleira/"
-        },
-        {
-            "categoria": "Caneleira",
-            "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Pretorian Elite",
+            "nome": "Pretorian",
             "imagem": "images/caneleiras/Aprimorando_Tecnica_Pretorian.jpg",
-            "link": "https://produto.mercadolivre.com.br/MLB-3788225933-caneleira-pretorian-elite-_JM"
+            "link": [
+                "https://mercadolivre.com/sec/28vU4iP",
+                "https://mercadolivre.com/sec/2f7FdiL"
+            ]
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Venum Challenger",
+            "nome": "Venum",
             "imagem": "images/caneleiras/Aprimorando_Tecnica_Venum.jpg",
-            "link": "https://amzn.to/4pLmFiz"
+            "link": "https://mercadolivre.com/sec/1JPdyhN"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Pronto para o Combate",
             "nome": "Jugui Carbon",
             "imagem": "images/caneleiras/Pronto_Combate_Jugui_Carbon.jpg",
-            "link": "https://jugui.com.br/protecao/caneleiras/caneleira-de-combate-linha-carbon-preta.html"
+            "link": "https://mercadolivre.com/sec/1dWBQjj"
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Pronto para o Combate",
             "nome": "Maximum Classic",
             "imagem": "images/caneleiras/Pronto_Combate_Maximum_Classic.jpg",
-            "link": "https://www.maximumshop.com.br/equipamentos/caneleira-muay-thai-e-kickboxing/caneleira-muay-thai-e-kickboxing-maximum-classic-black"
+            "link": [
+                "https://mercadolivre.com/sec/2sdf9Rs",
+                "https://mercadolivre.com/sec/1Ky5gVW"
+            ]
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Pronto para o Combate",
             "nome": "Mks Energy",
             "imagem": "images/caneleiras/Pronto_Combate_Mks_Energy.jpg",
-            "link": "https://www.mkscombat.com.br/acessorios/caneleira-de-muay-thai-e-kickboxing-mks-energy"
+            "link": [
+                "https://mercadolivre.com/sec/1jNWHUA",
+                "https://mercadolivre.com/sec/1nTTVu8",
+                "https://mercadolivre.com/sec/1YfQC4T",
+                "https://mercadolivre.com/sec/1cL2ZV8",
+                "https://mercadolivre.com/sec/1UcGV8U"
+            ]
         },
         {
             "categoria": "Caneleira",
             "sub_categoria": "Pronto para o Combate",
-            "nome": "Pulser 30mm",
+            "nome": "Pulser (30mm)",
             "imagem": "images/caneleiras/Pronto_Combate_Pulser_30mm.jpg",
-            "link": "https://www.pulserfight.com.br/lvrxwofs4-caneleira-couro-bordado-azul-30-mm"
+            "link": [
+                "https://mercadolivre.com/sec/2D4bF2a",
+                "https://mercadolivre.com/sec/2aGRJSu",
+                "https://mercadolivre.com/sec/2sktacq"
+            ]
         },
         {
             "categoria": "Protetor Bucal",

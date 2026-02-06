@@ -31,17 +31,27 @@ async function loadEquipamentos() {
                             <div class="subcategoria-group">
                                 <h3 class="subcategoria-title">${subCat}</h3>
                                 <div class="equipamentos-grid">
-                                    ${itens.map(item => `
-                                        <a href="${item.link}" target="_blank" class="equipamento-card">
+                                    ${itens.map(item => {
+                            const isMultiLink = Array.isArray(item.link);
+                            const cardTag = isMultiLink ? 'div' : 'a';
+                            const hrefAttr = isMultiLink ? '' : `href="${item.link}" target="_blank"`;
+                            const linkContent = isMultiLink
+                                ? `<div class="multi-links">
+                                                ${item.link.map((l, i) => `<a href="${l}" target="_blank" class="equipamento-link-btn sm">Opção ${i + 1}</a>`).join('')}
+                                               </div>`
+                                : `<div class="equipamento-link-btn">Ver Produto</div>`;
+
+                            return `
+                                        <${cardTag} ${hrefAttr} class="equipamento-card ${isMultiLink ? 'no-hover-link' : ''}">
                                             <div class="equipamento-img-wrapper">
                                                 <img src="${item.imagem}" alt="${item.nome}" class="equipamento-img" onerror="this.src='https://via.placeholder.com/200x200?text=Equipamento'">
                                             </div>
                                             <div class="equipamento-info">
                                                 <div class="equipamento-nome">${item.nome}</div>
-                                                <div class="equipamento-link-btn">Ver Produto</div>
+                                                ${linkContent}
                                             </div>
-                                        </a>
-                                    `).join('')}
+                                        </${cardTag}>
+                                    `}).join('')}
                                 </div>
                             </div>
                         `;
