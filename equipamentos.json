@@ -23,16 +23,65 @@
         {
             "categoria": "Luva (Choy Lay Fut)",
             "sub_categoria": "Primeiros Passos no Kung Fu",
-            "nome": "Luva CLF Tradicional",
-            "imagem": "images/luvas/luva_02.png",
-            "link": "https://www.google.com/search?q=luva+kung+fu+tradicional"
+            "nome": "Luva MMA Venum",
+            "imagem": "images/luvas/luva_venum_mma.webp",
+            "link": "https://mercadolivre.com/sec/2SZaQL9"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Primeiros Passos no Kung Fu",
+            "nome": "Luva MMA Ginpai",
+            "imagem": "images/luvas/luva_ginpai.webp",
+            "link": "https://mercadolivre.com/sec/2m19XoM"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Primeiros Passos no Kung Fu",
+            "nome": "Luva MMA Yunjida",
+            "imagem": "images/luvas/luva_yunjida.webp",
+            "link": "https://mercadolivre.com/sec/2fhuRt2"
         },
         {
             "categoria": "Luva (Choy Lay Fut)",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Luva CLF Couro",
-            "imagem": "images/luvas/luva_08.png",
-            "link": "https://www.google.com/search?q=luva+clf+couro"
+            "nome": "Luva Sparring MKS",
+            "imagem": "images/luvas/luva_sparring_mks.webp",
+            "link": "https://mercadolivre.com/sec/2Ra1xsc"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Luva MMA Hybrid Pretorian",
+            "imagem": "images/luvas/luva_hybrid_pretorian.webp",
+            "link": "https://mercadolivre.com/sec/2fhaoN4"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Luva Pretorian Elite",
+            "imagem": "images/luvas/luva_pretorian_elite.webp",
+            "link": "https://mercadolivre.com/sec/1EddeKL"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Luva MMA UFC",
+            "imagem": "images/luvas/luva_mma_ufc.webp",
+            "link": "https://mercadolivre.com/sec/1Jtw2Wz"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Luva Venum MMA Sparring Challenger Evo",
+            "imagem": "images/luvas/luva_venum_challenger_evo.webp",
+            "link": "https://mercadolivre.com/sec/1NaXn5s"
+        },
+        {
+            "categoria": "Luva (Choy Lay Fut)",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Luva MMA Sparring Maximun",
+            "imagem": "images/luvas/luva_maximum.webp",
+            "link": "https://mercadolivre.com/sec/2bQo7M7"
         },
         {
             "categoria": "Caneleira",

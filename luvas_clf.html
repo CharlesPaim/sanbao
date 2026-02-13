@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luvas Choy Lay Fut - San Bao Flix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reutilizando estilos específicos de equipamentos do original */
+        .equipamentos-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .categoria-section {
+            margin-bottom: 50px;
+        }
+
+        .categoria-title {
+            font-size: 28px;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subcategoria-group {
+            margin-bottom: 40px;
+        }
+
+        .subcategoria-title {
+            font-size: 20px;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid var(--muted);
+        }
+
+        .equipamentos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .equipamento-card {
+            background: var(--card);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .equipamento-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent);
+        }
+
+        .equipamento-img-wrapper {
+            width: 100%;
+            height: 200px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .equipamento-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .equipamento-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .equipamento-nome {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .equipamento-link-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--accent);
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .equipamento-card:hover .equipamento-link-btn {
+            background: #ff1f2d;
+        }
+
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .btn-voltar:hover {
+            color: var(--accent);
+        }
+
+        body.light-theme .equipamento-img-wrapper {
+            background: #f9f9f9;
+        }
+
+        .multi-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 15px;
+        }
+
+        .equipamento-link-btn.sm {
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-top: 0;
+            flex-grow: 1;
+        }
+
+        .equipamento-card.no-hover-link {
+            cursor: default;
+        }
+
+        .equipamento-card.no-hover-link:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="theme-btn" class="theme-toggle" onclick="toggleTheme()">☀️ Claro</button>
+        <img src="images/saobao_logo.png" alt="San Bao Logo" id="logo">
+        <h1>San Bao Flix</h1>
+        <h2>Luvas Choy Lay Fut</h2>
+    </header>
+
+    <main>
+        <div class="equipamentos-container">
+            <a href="equipamentos.html" class="btn-voltar">← Voltar para Categorias</a>
+
+            <div id="equipamentos-app" data-filter="Luva (Choy Lay Fut)">
+                <p style="text-align: center; color: var(--muted);">Carregando modelos...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>© San Bao Flix — Kung Fu Choy Lay Fut</footer>
+
+    <script src="script.js"></script>
+    <script src="equipamentos.js" defer></script>
+</body>
+
+</html>
