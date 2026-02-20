@@ -23,7 +23,7 @@ async function loadEquipamentos() {
                 `;
 
                 // Agrupar por Sub Categoria com os nomes lúdicos
-                const subCategorias = ["Primeiros Passos no Kung Fu", "Aprimorando a Técnica", "Pronto para o Combate"];
+                const subCategorias = ["Primeiros Passos no Kung Fu", "Aprimorando a Técnica", "Pronto para o Combate", "Kit Completo"];
 
                 subCategorias.forEach(subCat => {
                     const itens = equipamentosDaCategoria.filter(e => e.sub_categoria === subCat);

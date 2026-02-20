@@ -9,16 +9,99 @@
         {
             "categoria": "Luva (Sanda)",
             "sub_categoria": "Primeiros Passos no Kung Fu",
-            "nome": "Luva Sanda Training",
-            "imagem": "images/luvas/luva_01.png",
-            "link": "https://www.google.com/search?q=luva+sanda+boxe"
+            "nome": "Luva Rhino 14Oz",
+            "imagem": "images/luvas_sanda/rhino_14oz.webp",
+            "link": "https://mercadolivre.com/sec/1VpwkkF"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Primeiros Passos no Kung Fu",
+            "nome": "Luva Olimpo 16Oz",
+            "imagem": "images/luvas_sanda/olimpo_16oz.webp",
+            "link": "https://mercadolivre.com/sec/14bPa88"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Primeiros Passos no Kung Fu",
+            "nome": "Luva Vollo 14Oz",
+            "imagem": "images/luvas_sanda/vollo_14oz.webp",
+            "link": [
+                "https://mercadolivre.com/sec/2W4BaGx",
+                "https://mercadolivre.com/sec/2ojCnEu"
+            ]
         },
         {
             "categoria": "Luva (Sanda)",
             "sub_categoria": "Aprimorando a Técnica",
-            "nome": "Luva Sanda Pro",
-            "imagem": "images/luvas/luva_05.png",
-            "link": "https://www.google.com/search?q=luva+sanda+pro"
+            "nome": "Luva Naja 16Oz",
+            "imagem": "images/luvas_sanda/naja_16oz.webp",
+            "link": "https://mercadolivre.com/sec/2KpnDkA"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Luva Pretorian 16Oz",
+            "imagem": "images/luvas_sanda/pretorian_16oz.webp",
+            "link": [
+                "https://mercadolivre.com/sec/2CfzzUe",
+                "https://mercadolivre.com/sec/1yLyoH4",
+                "https://mercadolivre.com/sec/1mkgAmY"
+            ]
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Aprimorando a Técnica",
+            "nome": "Luva Pulser 16Oz",
+            "imagem": "images/luvas_sanda/pulser_16oz.webp",
+            "link": [
+                "https://mercadolivre.com/sec/2YpSDt6",
+                "https://mercadolivre.com/sec/2my4UAG"
+            ]
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Luva Boxe Jugui",
+            "imagem": "images/luvas_sanda/jugui_boxe.webp",
+            "link": "https://mercadolivre.com/sec/2xV1PCj"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Luva de Boxe Maximun 16Oz",
+            "imagem": "images/luvas_sanda/maximum_16oz.webp",
+            "link": [
+                "https://mercadolivre.com/sec/2MhDjg7",
+                "https://mercadolivre.com/sec/1YQmDrQ"
+            ]
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Pronto para o Combate",
+            "nome": "Luva de Boxe MKS 16Oz",
+            "imagem": "images/luvas_sanda/mks_16oz.webp",
+            "link": "https://mercadolivre.com/sec/1UDiLC1"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Kit Completo",
+            "nome": "Kit Maximum (Luva + Caneleira + Bandagem + Protetor Bucal)",
+            "imagem": "images/luvas_sanda/kit_maximum.webp",
+            "link": "https://mercadolivre.com/sec/2jivnyR"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Kit Completo",
+            "nome": "Kit Pulser (Luva + Caneleira + Bandagem)",
+            "imagem": "images/luvas_sanda/kit_pulser.webp",
+            "link": "https://mercadolivre.com/sec/1Rz9A3z"
+        },
+        {
+            "categoria": "Luva (Sanda)",
+            "sub_categoria": "Kit Completo",
+            "nome": "Kit Olimpo (Luva + Caneleira + Bandagem + Protetor Bucal)",
+            "imagem": "images/luvas_sanda/kit_olimpo.webp",
+            "link": "https://mercadolivre.com/sec/21wq6K7"
         },
         {
             "categoria": "Luva (Choy Lay Fut)",
